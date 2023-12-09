@@ -1,0 +1,31 @@
+.hero-img {
+  background-image: url(../images/hero-1.png);
+  background-size: cover;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 76vh;
+  background-repeat: no-repeat;
+  background-position: 53%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.hero-desktop {
+  background-image: url(../images/hero-desktop.png);
+  background-size: cover;
+  width: 99%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 82vh;
+  background-repeat: no-repeat;
+  background-position: 53%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}/*# sourceMappingURL=Hero.css.map */
