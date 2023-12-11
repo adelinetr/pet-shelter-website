@@ -3,3 +3,13 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Inter:wght@100;200;300;400;500&display=swap');
+
+@layer base {
+    h3{
+        @apply font-heading text-5xl mb-3;
+    }
+
+    h5{
+        @apply uppercase tracking-widest text-gray text-sm;
+    }
+}

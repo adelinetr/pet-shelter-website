@@ -13,11 +13,11 @@ export default function About() {
     }, [])
 
     return(
-        <div className="h-screen max-w-5xl mx-6 mt-14 mb-5">
+        <div className="h-screen max-w-5xl mx-10 md:mx-16 mb-10 mt-14 md:mb-24">
             <div className='md:flex md:justify-between md:items-center md:gap-10'>
                 <div className="text-left mt-14 md:mt-6">
-                    <h3 className="font-heading text-5xl mb-3">About us</h3>
-                    <h5 className="uppercase tracking-widest text-gray text-sm ">Our mission:</h5>
+                    <h3>About us</h3>
+                    <h5>Our mission:</h5>
                 </div>
 
                 <div className="mt-8 md:max-w-2xl">
@@ -29,13 +29,13 @@ export default function About() {
             </div>
 
             <motion.div className='flex mt-12 h-fit overflow-hidden' ref={carousel}>
-                <motion.div className='flex w-86 gap-5 md:w-86' 
+                <motion.div className='flex w-86' 
                 drag = 'x' 
                 dragConstraints={{right:0, left: -width ?? 0 }}>
                     {Card.map((image, index) => {
                         return(
-                            <motion.div className='w-64 object-cover md:pointer-events-none md:w-70'  key={index}>
-                                <img src={image} className='w-100 object-cover h-80 md:h-72' alt='' />
+                            <motion.div className='w-64 object-cover md:pointer-events-none md:w-80'  key={index}>
+                                <img src={image} className='w-100 object-cover h-80 md:h-90' alt='' />
                             </motion.div>
                         )
                     })}
