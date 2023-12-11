@@ -21,9 +21,10 @@ export default function About() {
                 </div>
 
                 <div className="mt-8 md:max-w-2xl">
-                    <p className="text-base text-gray">We sincerely believe that all animals left without home deserve a second chance, so we take care of them, heal them and do everything we can to find their dream home. Animal rescue organisation “Lese” was found in 2007. Currently, we have two subunits – in Vilnius and Kaunas.
-                        <br /><br />
-                        Our goal is finding home for all sheltered animals, thus they stay in the shelter until they find new owners or die of old age. The organization is based on people who volunteer at the shelter.
+                    <p className="text-base text-gray">
+                    Founded in 2007, we have grown into a thriving community of animal lovers. It all started with a group of dedicated individuals who shared a common goal – to rescue, rehabilitate. Today, we continue to build on that foundation, fueled by the support of our incredible volunteers, donors, and adoptive families.
+                    <br /><br />
+                    We believe that every pet deserves a chance for a joyful life, and we work tirelessly to make that vision a reality.
                     </p>
                 </div>
             </div>
