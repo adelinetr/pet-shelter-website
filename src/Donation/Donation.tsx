@@ -6,7 +6,7 @@ export default function Donation() {
         <section className='flex-col flex items-center mt-4 h-fit mb-20'>
         <div className='justify-center items-center flex flex-col md:flex-row'>
             <div className="flex flex-col mx-10 space-x-20 text-left h-screen md:flex-row 
-            md:h-fit md:justify-center md:items-center">
+            md:h-screen md:justify-center md:items-center">
                 <div className='flex flex-col '>
                     <div>
                         <h3 className='leading-tight'>Help Our fluffy Friends Today</h3>

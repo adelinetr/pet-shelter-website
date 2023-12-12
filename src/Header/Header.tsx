@@ -5,7 +5,7 @@ export default function Header() {
     return(
         <div>
             <div className="mx-6 my-6 flex flex-row items-center justify-between
-            md:my-4">
+            md:my-2">
                     <h3 className="text-3xl font-medium font-heading text-mainOrange md:mx-auto md:text-xl md:items-center">PetShelter</h3>
                     
 
