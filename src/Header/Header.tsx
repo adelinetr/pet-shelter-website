@@ -22,12 +22,10 @@ export default function Header() {
 
                 <div className="bg-white/50">
                     <nav className='hidden z-10 font-heading pt-6 text-2xl bg-white/50 pb-10 space-y-5 
-                    flex-col items-center justify-between max-w-screen-xl mt-6 md:flex md:mt-2 md:flex-row md:text-base
-                    md:mx-32 md:space-y-0 md:pt-0 md:pb-0 md:mb-4 '>
+                    flex-col items-center justify-between mt-6 md:flex md:mt-2 md:flex-row md:text-base
+                     md:space-y-0 md:pt-0 md:pb-0 md:mb-4 md:justify-center md:space-x-44 md:items-center'>
                         <a className='' href="./">Home</a>
                         <a className='' href="./">Our Pets</a>
-                        <a className='' href="./">Cats</a>
-                        <a className='' href="./">Dogs</a>
                         <a className='' href="./">Services</a>
                         <a className='' href="./">Contacts</a>
                     </nav>

@@ -29,3 +29,9 @@
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
+
+@media screen and (min-width: 900px) {
+    .hero-desktop{
+        max-width: 92vw;
+    }
+}

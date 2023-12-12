@@ -13,15 +13,16 @@ export default function About() {
     }, [])
 
     return(
-        <div className="h-screen max-w-5xl mx-10 md:mx-16 mb-10 mt-14 md:mb-24">
-            <div className='md:flex md:justify-between md:items-center md:gap-10'>
+        <section className='flex flex-col lg:flex-col lg:justify-center lg:items-center lg:mb-32'>
+        <div className="h-screen max-w-xl mx-10 md:mx-16 mb-10 mt-14 md:mb-24 lg:max-w-5xl">
+            <div className='md:flex md:flex-col md:gap-2 md:max-w-6xl'>
                 <div className="text-left mt-14 md:mt-6">
                     <h3>About us</h3>
                     <h5>Our mission:</h5>
                 </div>
 
                 <div className="mt-8 md:max-w-2xl">
-                    <p className="text-base text-gray">
+                    <p className="text-base md:text-base">
                     Founded in 2007, we have grown into a thriving community of animal lovers. It all started with a group of dedicated individuals who shared a common goal – to rescue, rehabilitate. Today, we continue to build on that foundation, fueled by the support of our incredible volunteers, donors, and adoptive families.
                     <br /><br />
                     We believe that every pet deserves a chance for a joyful life, and we work tirelessly to make that vision a reality.
@@ -29,13 +30,13 @@ export default function About() {
                 </div>
             </div>
 
-            <motion.div className='flex mt-12 h-fit overflow-hidden' ref={carousel}>
+            <motion.div className='flex mt-12 h-fit overflow-hidden ' ref={carousel}>
                 <motion.div className='flex w-86' 
                 drag = 'x' 
                 dragConstraints={{right:0, left: -width ?? 0 }}>
                     {Card.map((image, index) => {
                         return(
-                            <motion.div className='w-64 object-cover md:pointer-events-none md:w-80'  key={index}>
+                            <motion.div className='w-64 object-cover md:pointer-events-none md:w-72'  key={index}>
                                 <img src={image} className='w-100 object-cover h-80 md:h-90' alt='' />
                             </motion.div>
                         )
@@ -43,5 +44,6 @@ export default function About() {
                 </motion.div>
             </motion.div>
         </div>
+        </section>
     )
 }

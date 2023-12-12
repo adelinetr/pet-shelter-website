@@ -1,27 +1,26 @@
 
 
-export default function ServicesComponent (props: {image: string, title: string, description: string }) {
+export default function ServicesComponent (props: {image: string, title: string, description: string, border: string, titleColor: string, groupClass: string }) {
+    const cardClass = 'group mt-16 rounded-lg duration-150 flex flex-row ease-in-out lg:mx-4';
+    const titleClass = 'text-3xl font-semibold mb-2 md:text-xl'
+    const divClass = 'w-90 h-90 flex flex-col justify-center items-center lg:w-fit lg:flex-row lg:h-32'
+
     return(
         <section>
-            <div className="services">
+            <div className={`${props.border} ${cardClass}`} >
 
-                <div className='mt-16 items-center flex flex-col space-y-3 
-                md:w-72 md:mt-6 md:mx-5 '>
-                    <div className="flex items-center mx-auto justify-center">
+                <div className={`${divClass} ${props.groupClass}`}>
+
+                    <div>
                         <img 
-                        className="mb-6 mt-8 md:w-20" 
+                        className="mb-6 mt-8 lg:w-32 lg:h-20 lg:mx-1" 
                         src={props.image} 
                         alt="" />
                     </div>
 
-                    <div className="pb-6 flex flex-col items-center">
-                        <h4 className="font-medium text-3xl mb-4 md:text-xl">{props.title}</h4>
-                        <p className="w-80 text-lg md:text-base md:w-72">{props.description}</p>
-                    </div>
-
-                    <div>
-                        <button className="text-xl border border-black px-20 rounded-full py-4 
-                        md:py-3 md:px-12 md:text-sm">Learn more</button>
+                    <div className="text-left mx-6 flex flex-col items-center lg:items-baseline lg:w-60 ">
+                        <h4 className={`${props.titleColor} ${titleClass}`}>{props.title}</h4>
+                        <p className=" w-80 text-lg text-center text-gray md:text-sm group-hover:text-white lg:w-fit lg:text-left">{props.description}</p>
                     </div>
                 </div>
 
