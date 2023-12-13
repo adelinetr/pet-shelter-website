@@ -5,8 +5,8 @@ import VolunteerIcon from '../images/volunteer.svg'
 
 export default function HowToHelp () {
     return(
-        <section className="flex flex-col text-center items-center h-full max-w-full mt-14 pb-28
-        md:h-fit">
+        <section className="flex flex-col text-center mx-auto items-center h-full max-w-full mt-14 pb-28
+        md:h-fit xl:max-w-7xl">
 
             <div className="text-container items-center justify-center flex flex-col text-center mt-12">
                 <h3 className="text-4xl font-heading mb-10 md:mb-6">How to help?</h3>
@@ -14,7 +14,7 @@ export default function HowToHelp () {
                  <br /><br />If you'd like to contribute, you can support us by:</p>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:mx-16">
+            <div className="flex flex-col lg:flex-row lg:mx-16 xl:mx-6">
 
             <ServicesComponent
             image= {AdoptionIcon}

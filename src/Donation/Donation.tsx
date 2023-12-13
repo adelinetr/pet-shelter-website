@@ -3,10 +3,10 @@ import DonationImg from '../images/donation-img1.png'
 
 export default function Donation() {
     return(
-        <section className='flex-col flex items-center mt-4 h-fit mb-20'>
+        <section className='flex-col flex items-center mx-auto mt-4 h-fit mb-20 xl:mb-40 xl:max-w-7xl'>
         <div className='justify-center items-center flex flex-col md:flex-row'>
-            <div className="flex flex-col mx-10 space-x-20 text-left h-screen md:flex-row 
-            md:h-screen md:justify-center md:items-center">
+            <div className="flex flex-col mx-10 md:space-x-20 xl:space-x-60 text-left h-screen md:flex-row 
+            md:h-screen md:justify-center md:items-center xl:h-fit">
                 <div className='flex flex-col '>
                     <div>
                         <h3 className='leading-tight'>Help Our fluffy Friends Today</h3>

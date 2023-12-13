@@ -13,15 +13,15 @@ export default function About() {
     }, [])
 
     return(
-        <section className='flex flex-col lg:flex-col lg:justify-center lg:items-center lg:mb-32'>
-        <div className="h-screen max-w-xl mx-10 md:mx-16 mb-10 mt-14 md:mb-24 lg:max-w-5xl">
+        <section className='flex flex-col lg:flex-col lg:justify-center lg:items-center lg:mb-32 xl:mb-2'>
+        <div className="h-screen max-w-xl mx-10 md:mx-16 mb-10 mt-14 md:mb-24 lg:max-w-5xl xl:max-w-7xl xl:mb-2">
             <div className='md:flex md:flex-col md:gap-2 md:max-w-6xl'>
                 <div className="text-left mt-14 md:mt-6">
                     <h3>About us</h3>
                     <h5>Our mission:</h5>
                 </div>
 
-                <div className="mt-8 md:max-w-2xl">
+                <div className="mt-8 md:max-w-2xl xl:max-w-6xl">
                     <p className="text-base md:text-base">
                     Founded in 2007, we have grown into a thriving community of animal lovers. It all started with a group of dedicated individuals who shared a common goal – to rescue, rehabilitate. Today, we continue to build on that foundation, fueled by the support of our incredible volunteers, donors, and adoptive families.
                     <br /><br />
@@ -31,18 +31,22 @@ export default function About() {
             </div>
 
             <motion.div className='flex mt-12 h-fit overflow-hidden ' ref={carousel}>
-                <motion.div className='flex w-86' 
+                <motion.div className='flex w-86 xl:w-100' 
                 drag = 'x' 
                 dragConstraints={{right:0, left: -width ?? 0 }}>
                     {Card.map((image, index) => {
                         return(
-                            <motion.div className='w-64 object-cover md:pointer-events-none md:w-72'  key={index}>
-                                <img src={image} className='w-100 object-cover h-80 md:h-90' alt='' />
+                            <motion.div className='w-64 object-cover md:pointer-events-none md:w-72 xl:h-100 xl:w-96'  key={index}>
+                                <img src={image} className='w-100 object-cover h-80 md:h-90 xl:h-max' alt='' />
                             </motion.div>
                         )
                     })}
                 </motion.div>
             </motion.div>
+
+            <div className='hover:filter hover:drop-shadow-lg duration-300'>
+                <button className='mt-10  bg-white px-10 py-2 rounded-full border border-gray float-right'>Learn more</button>
+            </div>
         </div>
         </section>
     )
