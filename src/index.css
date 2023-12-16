@@ -22,4 +22,8 @@
     .button-hover {
         @apply hover:filter hover:drop-shadow-lg duration-300;
     }
+
+    .input {
+        @apply bg-lightGray border-b border-lighterGray w-90 focus:outline-none;
+    }
 }

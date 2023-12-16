@@ -5,7 +5,7 @@ import VolunteerImg2 from '../images/volunteer-2.png'
 export default function Volunteer () {
     return(
         <section className='xl:max-w-7xl flex flex-col mx-auto'>
-            <div  className='mx-6 flex flex-col justify-center mb-10 md:flex-row xl:items-center'>
+            <div  className='mx-6 flex flex-col justify-center mb-10 md:flex-row xl:items-center mt-36 md:mt-10'>
 
             <div>
                 <img className='rounded-lg h-80 object-cover w-full md:h-fit md:w-fit' src={VolunteerImg1} alt="" />

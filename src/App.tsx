@@ -1,5 +1,6 @@
 import About from './About/About';
 import CatData from './CatData/CatData';
+import Contacts from './Contact/Contacts';
 import Donation from './Donation/Donation';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
@@ -17,6 +18,7 @@ function App() {
         <About />
         <Donation />
         <Volunteer />
+        <Contacts />
         <Footer />
     </div>
   );
