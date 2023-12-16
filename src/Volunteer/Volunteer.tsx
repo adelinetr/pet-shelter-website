@@ -13,7 +13,7 @@ export default function Volunteer () {
 
             <div className='text-center flex flex-col lg:mx-10'>
                 <h3 className='text-4xl mt-6'>Try volunteering & spend more time with our animals!</h3>
-                <p className='mt-3'>Our goal is finding home for all sheltered animals, thus they stay in the shelter until they find new owners or die of old age. The organization is based on people who volunteer at the shelter.</p>
+                <p className='mt-3 leading-7'>Our goal is finding home for all sheltered animals, thus they stay in the shelter until they find new owners or die of old age. The organization is based on people who volunteer at the shelter.</p>
 
                 <div className='relative  items-center justify-center flex flex-col mt-20 mb-20'>
                     <div className='absolute group items-center justify-center '>
