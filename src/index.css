@@ -13,3 +13,13 @@
         @apply uppercase tracking-widest text-gray text-sm;
     }
 }
+
+@layer base {
+    .basic-button{
+        @apply  bg-white px-10 py-2 rounded-full border border-gray float-right
+    }
+
+    .button-hover {
+        @apply hover:filter hover:drop-shadow-lg duration-300;
+    }
+}

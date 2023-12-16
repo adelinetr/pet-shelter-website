@@ -1,0 +1,18 @@
+export default function CatData() {
+    
+    return(
+        <section className="flex flex-col lg:mb-32 xl:mb-2 xl:max-w-7xl mx-auto">
+            <div className=" max-w-xl mx-10 lg:max-w-5xl xl:max-w-7xl">
+                <div className="flex items-center justify-between max-w-2xl md:max-5xl lg:max-w-7xl">
+                    <div>
+                        <h3 className="text-mainOrange">Meet Our Friends</h3>
+                    </div>
+
+                    <div className="button-hover float-right hidden md:flex">
+                        <button className="basic-button text-mainOrange border-mainOrange">See our pets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}

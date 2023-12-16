@@ -44,8 +44,8 @@ export default function About() {
                 </motion.div>
             </motion.div>
 
-            <div className='hover:filter hover:drop-shadow-lg duration-300'>
-                <button className='mt-10  bg-white px-10 py-2 rounded-full border border-gray float-right'>Learn more</button>
+            <div className='hover:filter mt-12 hover:drop-shadow-lg duration-300'>
+                <button className='basic-button'>Learn more</button>
             </div>
         </div>
         </section>

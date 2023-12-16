@@ -1,4 +1,5 @@
 import About from './About/About';
+import CatData from './CatData/CatData';
 import Donation from './Donation/Donation';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
@@ -12,6 +13,7 @@ function App() {
         <Header />
         <Hero />
         <HowToHelp />
+        <CatData />
         <About />
         <Donation />
         <Volunteer />
