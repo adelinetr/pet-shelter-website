@@ -1,39 +1,38 @@
 import FooterComponent from "./FooterComponent";
-import Instagram from './instagram.svg'
-import Facebook from './facebook.svg'
-import Google from './google.svg'
 
 export default function Footer() {
     return(
         <div>
-            <div className="flex flex-col items-center justify-center bg-[#1A1A1A] h-fit py-32 space-y-10">
+            <div className="flex flex-col items-center justify-center bg-[#1A1A1A] h-fit py-32 space-y-10 md:grid md:grid-cols-3 md:space-y-0">
                 <div className="flex flex-col items-center justify-center">
                     <h2 className="font-heading text-mainOrange text-3xl">PetShelter</h2>
                     <p className="text-lighterGray text-xs w-90 font-extralight text-center mt-4 leading-5">We strongly believe in providing a better life for stray animals thanks to our organization.</p>
                 </div>
 
-                <div className="space-y-8">
-                    <FooterComponent 
-                    heading="All Pets"
-                    page1="Our Cats"
-                    page2="Our Dogs"
-                    page3="Adoption Application"
-                    />
+                
+                <div className="flex flex-col md:flex-row md:items-baseline justify-between space-y-8 md:space-y-0">
+                        <FooterComponent 
+                        heading="All Pets"
+                        page1="Our Cats"
+                        page2="Our Dogs"
+                        page3=""
+                        />
+                    
+                        <FooterComponent
+                        heading="Services"
+                        page1="Adoption"
+                        page2="Donation"
+                        page3="Volunteering"
+                        />
 
-                    <FooterComponent
-                    heading="Services"
-                    page1="Adoption"
-                    page2="Donation"
-                    page3="Volunteering"
-                    />
-
-                    <FooterComponent
-                    heading="How to..."
-                    page1="How to Help"
-                    page2="How Donation Helps"
-                    page3="How To Volunteer"
-                    />
+                        <FooterComponent
+                        heading="How to..."
+                        page1="How to Help"
+                        page2="How Donation Helps"
+                        page3="How To Volunteer"
+                        />
                 </div>
+            
 
                 <div className="flex flex-row items-center justify-center space-x-20">
 
