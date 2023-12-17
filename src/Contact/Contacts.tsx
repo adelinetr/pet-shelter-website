@@ -4,7 +4,7 @@ export default function Contacts() {
             <div className="bg-lightGray w-screen max-w-7xl mx-auto rounded-lg h-fit mb-6 pb-20">
                 <div className="mx-10 mt-12"> 
                     <h3 className="text-center mb-6">Contact us</h3>
-                    <p className="text-sm mx-auto text-center w-96 text-black leading-6 md:text-left md:w-1/2">Whether you're seeking information about our adoption process, volunteering opportunities, or have general inquiries about pet care, don't hesitate to contact us. </p>
+                    <p className="text-sm mx-auto text-center w-96 text-black leading-6  md:w-1/2">Whether you're seeking information about our adoption process, volunteering opportunities, or have general inquiries about pet care, don't hesitate to contact us. </p>
                 </div>
 
                 <div className="mx-10 mt-20">

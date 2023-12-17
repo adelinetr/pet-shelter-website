@@ -10,7 +10,7 @@ export default function HowToHelp () {
 
             <div className="text-container items-center justify-center flex flex-col text-center mt-12">
                 <h3 className="text-4xl font-heading mb-10 md:mb-6">How to help?</h3>
-                <p className="leading-7 text-lg w-1/2 md:text-base">Every homeless animal deserves a second opportunity, so we provide care, nursing, and make every effort to secure their ideal homes.
+                <p className="leading-7 text-lg w-1/2 md:w-fit lg:mx-90 md:text-base">Every homeless animal deserves a second opportunity, so we provide care, nursing, and make every effort to secure their ideal homes.
                  <br /><br />If you'd like to contribute, you can support us by:</p>
             </div>
 
@@ -22,7 +22,7 @@ export default function HowToHelp () {
             description="Every adoption creates a forever home filled with joy and wagging tails!"
             border="border border-[#F89A5F]"
             titleColor="text-[#D4753A] group-hover:text-white"
-            groupClass="group-hover:bg-[#DF8D5A] group-hover:text-white group-hover:rounded-lg duration-300 group-hover:cursor-pointer" 
+            groupClass="group-hover:bg-[#DF8D5A] group-hover:text-white group-hover:rounded-lg duration-500 group-hover:cursor-pointer" 
             />
 
             <ServicesComponent
@@ -31,7 +31,7 @@ export default function HowToHelp () {
             description="Help us provide shelter, medical care, and love to animals in need."
             border="border border-[#3BBE6F]"
             titleColor="text-[#18994B] group-hover:text-white"
-            groupClass="group-hover:bg-[#3BBE6F] group-hover:text-white group-hover:rounded-lg duration-300 group-hover:cursor-pointer "
+            groupClass="group-hover:bg-[#3BBE6F] group-hover:text-white group-hover:rounded-lg duration-500 group-hover:cursor-pointer "
             />
 
             <ServicesComponent
@@ -40,7 +40,7 @@ export default function HowToHelp () {
             description="Your time and dedication can create a brighter future for our pets."
             border="border border-[#417ACF]"
             titleColor="text-[#2060BE] group-hover:text-white"
-            groupClass="group-hover:bg-[#417ACF] group-hover:text-white group-hover:rounded-lg duration-300 group-hover:cursor-pointer"
+            groupClass="group-hover:bg-[#417ACF] group-hover:text-white group-hover:rounded-lg duration-500 group-hover:cursor-pointer"
             />
 
             </div>
