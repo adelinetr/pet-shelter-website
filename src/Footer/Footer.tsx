@@ -2,15 +2,15 @@ import FooterComponent from "./FooterComponent";
 
 export default function Footer() {
     return(
-        <div>
-            <div className="flex flex-col items-center justify-center bg-[#1A1A1A] h-fit py-32 space-y-10 md:grid md:grid-cols-3 md:space-y-0">
+        <div className="bg-[#1A1A1A]">
+            <div className="flex flex-col items-center mx-auto justify-center bg-[#1A1A1A] h-fit py-32 space-y-10 lg:grid lg:grid-cols-3 lg:space-y-0 lg:max-w-7xl">
                 <div className="flex flex-col items-center justify-center">
                     <h2 className="font-heading text-mainOrange text-3xl">PetShelter</h2>
-                    <p className="text-lighterGray text-xs w-90 font-extralight text-center mt-4 leading-5">We strongly believe in providing a better life for stray animals thanks to our organization.</p>
+                    <p className="text-lighterGray text-xs w-90 font-extralight text-center mt-4 leading-5 lg:w-80">We strongly believe in providing a better life for stray animals thanks to our organization.</p>
                 </div>
 
                 
-                <div className="flex flex-col md:flex-row md:items-baseline justify-between space-y-8 md:space-y-0">
+                <div className="flex flex-col lg:flex-row lg:items-baseline justify-between space-y-8 lg:space-y-0 lg:w-full">
                         <FooterComponent 
                         heading="All Pets"
                         page1="Our Cats"
@@ -34,7 +34,7 @@ export default function Footer() {
                 </div>
             
 
-                <div className="flex flex-row items-center justify-center space-x-20">
+                <div className="flex flex-row items-center justify-center space-x-20 lg:space-x-16">
 
                     <div className="group cursor-pointer relative">
                         <svg className="absolute" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

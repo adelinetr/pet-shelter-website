@@ -16,7 +16,7 @@ export default function Contacts() {
                     </div>
 
                     <div className="button-hover relative flex justify-center items-center">
-                        <button className="basic-button float-none px-32 py-3 absolute md:px-20 bg-mainOrange text-white border-none md:float-left">Submit</button>
+                        <button className="basic-button float-none absolute md:px-20 bg-mainOrange text-white hover:bg-[#C25E25] duration-300 border-none md:float-left">Submit</button>
                     </div>
                 </div>
 

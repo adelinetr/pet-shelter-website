@@ -16,11 +16,7 @@
 
 @layer base {
     .basic-button{
-        @apply  bg-white px-10 py-2 rounded-full border border-gray float-right
-    }
-
-    .button-hover {
-        @apply hover:filter hover:drop-shadow-lg duration-300;
+        @apply  px-10 py-2 rounded-full font-medium uppercase; 
     }
 
     .input {

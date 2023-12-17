@@ -28,7 +28,7 @@ export default function Donation() {
                     </div>
                     
                     <div className='group relative mt-14 mb-10'>
-                        <button className='absolute group-hover:bg-[#3CA767] duration-300 font-medium group-hover:text-white text-[#3CA767] uppercase px-14 py-2 rounded-full border border-[#3CA767]'>Donate</button>
+                        <button className='absolute group-hover:bg-[#FFE4D6] duration-300 font-medium text-mainOrange uppercase px-14 py-2 rounded-full bg-[#FFF3ED]'>Donate</button>
                     </div>
                 </div>
 

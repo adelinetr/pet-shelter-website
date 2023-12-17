@@ -44,9 +44,6 @@ export default function About() {
                 </motion.div>
             </motion.div>
 
-            <div className='hover:filter mt-12 hover:drop-shadow-lg duration-300'>
-                <button className='basic-button'>Learn more</button>
-            </div>
         </div>
         </section>
     )
