@@ -22,8 +22,9 @@ module.exports = {
       'blue' : '#3C67A7'
     },
     fontFamily: {
-      sans: ['Inter', 'sans-serif'],
-      heading: ['Fredoka']
+      text: ['Inter', 'sans-serif'],
+      logo: ['Fredoka'],
+      heading:['DM Sans']
     }, 
     extend: {
       spacing: {

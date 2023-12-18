@@ -9,7 +9,7 @@ export default function Donation() {
             md:h-screen md:justify-center md:items-center xl:h-fit">
                 <div className='flex flex-col '>
                     <div>
-                        <h3 className='leading-tight'>Help Our fluffy Friends Today</h3>
+                        <h3 className='leading-tight lg:text-5xl'>Help Our fluffy Friends Today</h3>
                         <h5 className='mb-8'>How Your Donation Helps:</h5>
                     </div>
 
