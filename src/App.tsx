@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home Page/Home';
 import OurPets from './OurPets/OurPets';
+import DogsPage from './OurPets/DogsPage/DogsPage';
+import CatsPage from './OurPets/CatsPage/CatsPage';
 
 export default function App() {
   return (
@@ -10,8 +12,8 @@ export default function App() {
         <Route path='/' element={<Home />} />
         {/*Our Pets*/ }
         <Route path='/our-pets' element={<OurPets />} />
-        <Route path='/our-pets/cats' element={<OurPets />} />
-        <Route path='/our-pets/dogs' element={<OurPets />} />
+        <Route path='/our-pets/cats' element={<CatsPage/>} />
+        <Route path='/our-pets/dogs' element={<DogsPage />} />
         <Route path='/our-pets/adoption-application' element={<OurPets />} />
         {/*Services*/ }
 

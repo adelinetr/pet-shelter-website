@@ -1,9 +1,9 @@
-import CatsHero from './CatsPage/CatsHero'
+import CatsPage from './CatsPage/CatsPage'
 
 export default function OurPets() {
     return(
         <div>
-            <CatsHero />
+            <CatsPage />
         </div>
     )
 }
