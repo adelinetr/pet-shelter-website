@@ -1,27 +1,22 @@
-import About from './Home Page/About/About';
-import CatData from './Home Page/CatData/CatData';
-import Contacts from './Contact/Contacts';
-import Donation from './Home Page/Donation/Donation';
-import Footer from './Footer/Footer';
-import Header from './Header/Header';
-import Hero from './Home Page/Hero/Hero';
-import HowToHelp from './Home Page/HowToHelp/HowToHelp';
-import Volunteer from './Home Page/Volunteer/Volunteer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Home Page/Home';
+import OurPets from './OurPets/OurPets';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-        <Header />
-        <Hero />
-        <HowToHelp />
-        <CatData />
-        <About />
-        <Donation />
-        <Volunteer />
-        <Contacts />
-        <Footer />
-    </div>
-  );
-}
+    <BrowserRouter>
+      <Routes>
+         {/*Homepage*/ }
+        <Route path='/' element={<Home />} />
+        {/*Our Pets*/ }
+        <Route path='/our-pets' element={<OurPets />} />
+        <Route path='/our-pets/cats' element={<OurPets />} />
+        <Route path='/our-pets/dogs' element={<OurPets />} />
+        <Route path='/our-pets/adoption-application' element={<OurPets />} />
+        {/*Services*/ }
 
-export default App;
+      </Routes> 
+    </BrowserRouter>
+  );
+} 
+
