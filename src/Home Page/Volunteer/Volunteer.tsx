@@ -2,13 +2,13 @@ import VolunteerImg1 from '../images/volunteer-1.png'
 
 export default function Volunteer () {
     return(
-        <section className='xl:max-w-7xl flex flex-col mx-auto'>
+        <section className='xl:max-w-6xl flex flex-col mx-auto'>
             <div  className='mx-6 flex flex-col justify-center mb-10 md:flex-row xl:items-center mt-36 md:mt-10 lg:space-x-20'>
                 <div>
-                    <img className='rounded-lg h-80 object-cover w-full md:h-fit md:w-fit' src={VolunteerImg1} alt="" />
+                    <img className='rounded-lg h-72 object-cover w-96 md:h-auto' src={VolunteerImg1} alt="" />
                 </div>
 
-                <div className='text-center flex flex-col md:text-left md:mx-10'>
+                <div className='text-center flex flex-col md:text-left md:w-1/2 md:mx-10'>
                     <h3 className='text-4xl mt-6 lg:text-5xl'>Try volunteering & spend more time with our animals!</h3>
                     <p className='mt-6 leading-7'>Our goal is finding home for all sheltered animals, thus they stay in the shelter until they find new owners or die of old age. The organization is based on people who volunteer at the shelter.</p>
 

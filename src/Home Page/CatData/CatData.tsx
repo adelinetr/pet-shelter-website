@@ -1,7 +1,7 @@
 export default function CatData() {
     
     return(
-        <section className="flex flex-col lg:mb-32 xl:mb-2 xl:max-w-7xl mx-auto">
+        <section className="flex flex-col md:mx-16 lg:mb-32 xl:mb-2 xl:max-w-7xl mx-auto">
             <div className=" max-w-xl mx-10 md:mx-0 lg:max-w-5xl xl:max-w-7xl">
                 <div className="flex items-center justify-between max-w-2xl md:max-5xl lg:max-w-7xl">
                     <div>
