@@ -27,4 +27,8 @@
         flex-col items-center justify-between mt-6 lg:flex lg:mt-2 lg:flex-row lg:text-base
         lg:space-y-0 lg:pt-0 lg:pb-0 lg:mb-4 lg:justify-center lg:space-x-44 lg:items-center;
     }
+
+    .points{
+        @apply border-[#FF8643] border font-medium cursor-default hover:bg-[#FF8643] hover:text-white duration-300 w-max rounded-full text-center px-5 py-2 text-[#FF8643] ;
+    }
 }

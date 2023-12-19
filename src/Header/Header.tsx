@@ -10,7 +10,7 @@ export default function Header() {
         <div>
             <div className="mx-6 my-6 flex flex-row items-center justify-between
             md:my-2 lg:mx-16">
-                <h3 className="text-3xl font-medium font-logo mx-auto text-mainOrange md:my-3 md:items-center">PetShelter</h3>
+                <h3 className="text-3xl font-medium font-logo md:mx-auto text-mainOrange md:my-3 md:items-center">PetShelter</h3>
                     
                 <div className="menu">
                     <button type="button" id="menu-btn"
