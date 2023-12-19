@@ -1,9 +1,9 @@
 .dogs-hero {
-  background-image: url(./dogs.png);
+  background-image: url(./dogs-hero.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
-  width: 95%;
+  height: 97vh;
+  width: 98%;
   margin-left: auto;
   margin-right: auto;
   background-position-y: 30%;

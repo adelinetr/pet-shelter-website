@@ -4,6 +4,7 @@ import OurPets from './OurPets/OurPets';
 import DogsPage from './OurPets/DogsPage/DogsPage';
 import CatsPage from './OurPets/CatsPage/CatsPage';
 import AdoptionApplication from './OurPets/AdoptionApplication/AdoptionApplication';
+import AboutPage from './AboutUs/AboutPage';
 
 export default function App() {
   return (
@@ -11,6 +12,8 @@ export default function App() {
       <Routes>
          {/*Homepage*/ }
         <Route path='/' element={<Home />} />
+        {/*About us*/ }
+        <Route path='/about-us' element={<AboutPage />} />
         {/*Our Pets*/ }
         <Route path='/our-pets' element={<OurPets />} />
         <Route path='/our-pets/cats' element={<CatsPage/>} />
