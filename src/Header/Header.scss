@@ -1,8 +1,8 @@
 /*Hamburger Menu*/
 .hamburger{
     cursor: pointer;
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
     transition: all 0.25s;
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
@@ -15,11 +15,11 @@
 .middle-line,
 .bottom-line{
     position: absolute;
-    width: 24px;
+    width: 45px;
     height: 2px;
     top: 0;
     left: 0;
-    background: #D18332;
+    background: white;
     transform: rotate(0);
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -30,10 +30,12 @@
 
 .middle-line{
     transform: translateY(7px);
+    margin-top: 7px;
 }
 
 .bottom-line{
     transform: translateY(14px); 
+    margin-top: 15px;
 } 
 
 .open{

@@ -1,26 +1,35 @@
 .hero-img {
-  background-image: url(../images/hero-1.png);
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-image: url(../images/images-redesign/hero.png);
   background-size: cover;
-  width: 95%;
+  width: 96%;
   margin-left: auto;
   margin-right: auto;
-  height: 76vh;
+  height: 95vh;
+  filter: brightness(0.8);
+  z-index: 1;
   background-repeat: no-repeat;
-  background-position: 53%;
+  background-position: 50%;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  -webkit-filter: brightness(0.8);
 }
 
 .hero-desktop {
-  background-image: url(../images/hero-desktop.png);
+  background-image: url(../images/images-redesign/hero.png);
   background-size: cover;
-  width: 99%;
+  width: 98%;
+  filter: brightness(0.7);
   margin-left: auto;
   margin-right: auto;
-  height: 80vh;
+  height: 97vh;
+  margin-top: 0.5em;
   background-repeat: no-repeat;
   background-position: 53%;
   border-radius: 15px;
@@ -28,10 +37,11 @@
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  -webkit-filter: brightness(0.7);
 }
 
 @media screen and (min-width: 900px) {
   .hero-desktop {
-    max-width: 92vw;
+    max-width: 98vw;
   }
 }/*# sourceMappingURL=Hero.css.map */

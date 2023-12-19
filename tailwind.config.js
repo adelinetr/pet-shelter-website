@@ -18,7 +18,8 @@ module.exports = {
       'lightGray' : '#F6F6F6',
       'darkGray' : '#2D2D2D',
       'lighterGray' : '#ADADAD',
-      'mainOrange' : '#DA7339',
+      'mainOrange' : '#D86423',
+      'orange': '#E57536',
       'blue' : '#3C67A7'
     },
     fontFamily: {
