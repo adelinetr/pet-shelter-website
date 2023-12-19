@@ -10,7 +10,7 @@ export default function ServicesLink() {
                 </svg>
             </a>
 
-            <div className='group-hover:flex absolute z-10 items-center justify-center mx-auto hidden bg-white rounded-b-lg ease-in-out h-48 w-44'>
+            <div className='group-hover:flex absolute items-center justify-center mx-auto hidden bg-white rounded-b-lg ease-in-out h-48 w-44'>
                 <div>
                     <ul className=' mx-4 mt-4 space-y-4 text-gray'>
                         <li><Link to='/services/adoption' className='hover:text-mainOrange duration-200'>Adoption</Link></li>
