@@ -1,6 +1,6 @@
 import Header from "../../Header/Header";
 import Search from "../CatsPage/Search/Search";
-import DogsHero from "./DogsHero";
+import DogsHero from "./DogsHero/DogsHero";
 
 export default function DogsPage() {
     return(

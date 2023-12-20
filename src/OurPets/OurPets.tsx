@@ -1,4 +1,4 @@
-import CatsPage from './CatsPage/CatsPage'
+import CatsPage from './CatsPage/CatsHero/CatsPage'
 
 export default function OurPets() {
     return(
