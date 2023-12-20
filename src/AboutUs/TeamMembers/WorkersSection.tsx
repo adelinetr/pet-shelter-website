@@ -11,7 +11,7 @@ import Vaida from './images/Vaida.png'
 export default function WorkersSection() {
     return(
         <section>
-            <div className="grid grid-cols-2 gap-6 md:gap-12 md:grid-cols-3 lg:grid-cols-4">
+            <div className="grid grid-cols-2 gap-6 mb-40 md:gap-12 md:grid-cols-3 lg:grid-cols-4">
                 <WorkerComponent
                 image={Mia}
                 name="Mia Wilson"

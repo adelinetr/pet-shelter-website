@@ -31,4 +31,8 @@
     .points{
         @apply border-[#FF8643] border font-medium cursor-default hover:bg-[#FF8643] hover:text-white duration-300 w-max rounded-full text-center px-5 py-2 text-[#FF8643] ;
     }
+
+    .bg-img{
+        @apply absolute rounded-lg filter brightness-75;
+    }
 }

@@ -2,8 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home Page/Home';
 import OurPets from './OurPets/OurPets';
 import DogsPage from './OurPets/DogsPage/DogsPage';
-import CatsPage from './OurPets/CatsPage/CatsPage';
-import AdoptionApplication from './OurPets/AdoptionApplication/AdoptionApplication';
+import CatsPage from './OurPets/CatsPage/CatsHero/CatsPage';
+import AdoptionApplication from './AdoptionApplication/AdoptionApplication';
 import AboutPage from './AboutUs/AboutPage';
 
 export default function App() {
@@ -18,7 +18,7 @@ export default function App() {
         <Route path='/our-pets' element={<OurPets />} />
         <Route path='/our-pets/cats' element={<CatsPage/>} />
         <Route path='/our-pets/dogs' element={<DogsPage />} />
-        <Route path='/our-pets/adoption-application' element={<AdoptionApplication />} />
+        <Route path='/services/adoption' element={<AdoptionApplication />} />
         {/*Services*/ }
 
       </Routes> 
