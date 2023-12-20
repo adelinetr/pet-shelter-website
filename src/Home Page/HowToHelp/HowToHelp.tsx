@@ -20,7 +20,7 @@ export default function HowToHelp () {
             image= {AdoptionIcon}
             title="Adoption"
             description="Every adoption creates a forever home filled with joy and wagging tails!"
-            border="border border-[#F89A5F]"
+            border="border border-[#DBDBDB]"
             titleColor="text-[#D4753A] group-hover:text-white"
             groupClass="group-hover:bg-[#DF8D5A] group-hover:text-white group-hover:rounded-lg duration-500 group-hover:cursor-pointer" 
             />
@@ -29,7 +29,7 @@ export default function HowToHelp () {
             image= {DonationIcon}
             title="Donation"
             description="Help us provide shelter, medical care, and love to animals in need."
-            border="border border-[#3BBE6F]"
+            border="border border-[#DBDBDB]"
             titleColor="text-[#18994B] group-hover:text-white"
             groupClass="group-hover:bg-[#3BBE6F] group-hover:text-white group-hover:rounded-lg duration-500 group-hover:cursor-pointer "
             />
@@ -38,7 +38,7 @@ export default function HowToHelp () {
             image= {VolunteerIcon}
             title="Volunteer"
             description="Your time and dedication can create a brighter future for our pets."
-            border="border border-[#417ACF]"
+            border="border border-[#DBDBDB]"
             titleColor="text-[#2060BE] group-hover:text-white"
             groupClass="group-hover:bg-[#417ACF] group-hover:text-white group-hover:rounded-lg duration-500 group-hover:cursor-pointer"
             />

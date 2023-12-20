@@ -9,7 +9,7 @@ export default function CatData() {
                     </div>
 
                     <div className="button-hover float-right hidden md:flex">
-                        <button className="basic-button hover:bg-[#DA7339] hover:text-white duration-300 font-medium text-mainOrange uppercase px-14 py-2 rounded-full bg-[#FFF3ED]">See our pets</button>
+                        <button className="basic-button hover:bg-[#DA7339] hover:text-white duration-300 font-medium text-mainOrange uppercase px-14 py-2 bg-[#FFF3ED]">See our pets</button>
                     </div>
                 </div>
             </div>

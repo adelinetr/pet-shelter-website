@@ -1,0 +1,26 @@
+.about-hero {
+  background-image: url(./about-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  filter: brightness(0.8);
+  background-position-y: 35%;
+  height: 97vh;
+  -webkit-filter: brightness(0.8);
+}
+
+.about-img-mobile {
+  background-image: url(./about-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  filter: brightness(0.8);
+  background-position-y: 35%;
+  background-position-x: 85%;
+  height: 98vh;
+  -webkit-filter: brightness(0.9);
+}/*# sourceMappingURL=About.css.map */

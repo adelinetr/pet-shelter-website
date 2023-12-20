@@ -14,7 +14,7 @@ export default function Volunteer () {
 
                     <div className='relative items-center justify-center flex flex-col mt-20 mb-20 md:justify-start md:items-start'>
                         <div className='absolute group items-center justify-center '>
-                            <button className='basic-button group-hover:bg-[#D5E3F9] duration-500 border bg-[#EAF2FF] text-[#447DD1] border-none text-2xl rounded-full
+                            <button className='basic-button group-hover:bg-[#D5E3F9] duration-500 border bg-[#EAF2FF] text-[#447DD1] border-none text-2xl 
                             md:px-14 md:text-base'>Volunteer</button>
                         </div>
                     </div>
