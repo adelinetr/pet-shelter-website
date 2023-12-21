@@ -1,13 +1,13 @@
 import Header from "../../Header/Header";
 import SearchSection from "../SearchSection";
-import DogsHero from "./DogsHero/DogsHero";
+import CatsHero from './CatsHero/CatsHero' 
 
-export default function DogsPage() {
+export default function CatsPage() {
     return(
-        <div>
+        <section>
             <Header />
-            <DogsHero />
+            <CatsHero />
             <SearchSection />
-        </div>
+        </section>
     )
 }

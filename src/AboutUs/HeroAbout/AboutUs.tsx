@@ -3,7 +3,7 @@ import './About.css'
 export default function AboutUs() {
     return(
         <section className='w-full'>
-            <div className='mx-1 flex flex-col h-screen lg:h-auto items-center justify-center'>
+            <div className='mx-1 flex flex-col h-screen  items-center justify-center'>
                 <div className="about-img-mobile absolute md:hidden rounded-lg"></div>
                 <div className="about-hero hidden md:block rounded-lg"></div>
                 

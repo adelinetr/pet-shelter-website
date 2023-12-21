@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home Page/Home';
 import OurPets from './OurPets/OurPets';
 import DogsPage from './OurPets/DogsPage/DogsPage';
-import CatsPage from './OurPets/CatsPage/CatsHero/CatsPage';
+import CatsPage from './OurPets/CatsPage/CatsPage';
 import AdoptionApplication from './AdoptionApplication/AdoptionApplication';
 import AboutPage from './AboutUs/AboutPage';
 

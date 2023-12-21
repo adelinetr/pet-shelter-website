@@ -1,9 +1,10 @@
+import Button from '../../Button'
 import './Hero.css'
 
 export default function Hero () {
     return(
         <section>
-        <div className='flex flex-col items-center justify-center mx-auto'>
+        <div className='flex flex-col items-center justify-center mx-auto mt-2'>
             <div className="hero-img absolute md:hidden"></div>
             <div className='hidden md:flex hero-desktop relative'></div>
 
@@ -15,9 +16,9 @@ export default function Hero () {
                     </p>
                 </div>   
 
-                <div className="button text-center mx-auto lg:mx-20 mt-44 lg:mt-10">
-                    <button className='text-xl items-center text-white border font-medium border-white uppercase w-80 rounded-lg py-4 hover:bg-mainOrange
-                     ease-in-out duration-300 md:w-60 md:hover:bg-white md:hover:text-black md:text-sm md:py-3 md:px-2'>Adopt a Pet</button>
+                <div className="button w-full md:w-auto text-center mx-auto text-white lg:mx-20 mt-60 lg:mt-10">
+                    <Button
+                    name='Adopt a Pet' />
                 </div>
             </div>
         </div>

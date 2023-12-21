@@ -13,10 +13,14 @@
 .cat-mobile {
   background-image: url(./images/cats-hero.png);
   background-size: cover;
-  height: 97vh;
+  height: 98vh;
   width: 98%;
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
   background-position-x: 65%;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }/*# sourceMappingURL=CatsHero.css.map */
