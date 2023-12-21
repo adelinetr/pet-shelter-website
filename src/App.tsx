@@ -5,6 +5,9 @@ import DogsPage from './OurPets/DogsPage/DogsPage';
 import CatsPage from './OurPets/CatsPage/CatsPage';
 import AdoptionApplication from './AdoptionApplication/AdoptionApplication';
 import AboutPage from './AboutUs/AboutPage';
+import Volunteer from './Volunteer/Volunteer';
+import Donation from './Donation/Donation';
+import Contacts from './ContactsPage/Contacts';
 
 export default function App() {
   return (
@@ -18,9 +21,12 @@ export default function App() {
         <Route path='/our-pets' element={<OurPets />} />
         <Route path='/our-pets/cats' element={<CatsPage/>} />
         <Route path='/our-pets/dogs' element={<DogsPage />} />
-        <Route path='/services/adoption' element={<AdoptionApplication />} />
         {/*Services*/ }
-
+        <Route path='/services/adoption' element={<AdoptionApplication />} />
+        <Route path='/services/volunteer' element={<Volunteer />} />
+        <Route path='/services/donation' element={<Donation />} />
+        {/*Contacts*/ }
+        <Route path='/contacts' element={<Contacts />} />
       </Routes> 
     </BrowserRouter>
   );

@@ -1,4 +1,4 @@
-export default function Contacts() {
+export default function Contacting() {
     return(
         <section className="flex-col flex w-full items-center justify-center mt-20">
             <div className="bg-lightGray w-screen max-w-6xl mx-auto rounded-lg h-fit mb-6 pb-20">

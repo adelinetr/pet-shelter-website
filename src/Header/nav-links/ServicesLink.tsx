@@ -11,13 +11,12 @@ export default function ServicesLink() {
                 </svg>
             </a>
 
-            <div className='group-hover:flex absolute items-center justify-center mx-auto hidden bg-white rounded-b-lg ease-in-out h-48 w-44'>
+            <div className='group-hover:flex absolute items-center justify-center mx-auto hidden bg-white rounded-b-lg ease-in-out h-36 w-44'>
                 <div>
                     <ul className=' mx-4 mt-4 space-y-4 text-gray'>
                         <li><Link to='/services/adoption' className='hover:text-mainOrange duration-200'>Adoption</Link></li>
-                        <li><Link to='/services/volunteer-today' className='hover:text-mainOrange duration-200'>Volunteer Today</Link></li>
-                        <li><Link to='/services/donate' className='hover:text-mainOrange duration-200'>Donate & Help</Link></li>
-                        <li><Link to='/services/foster-program' className='hover:text-mainOrange duration-200'>Foster Program</Link></li>
+                        <li><Link to='/services/volunteer' className='hover:text-mainOrange duration-200'>Volunteer Today</Link></li>
+                        <li><Link to='/services/donation' className='hover:text-mainOrange duration-200'>Donate & Help</Link></li>
                     </ul>
                 </div>
             </div>

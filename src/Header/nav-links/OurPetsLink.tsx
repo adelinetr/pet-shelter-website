@@ -10,7 +10,7 @@ export default function OurPetsLink() {
                 </svg>
             </Link>
 
-            <div className='group-hover:flex absolute z-10 items-center justify-center hidden bg-white rounded-b-lg ease-in-out h-32 w-36'>
+            <div className='group-hover:flex absolute z-10 items-center justify-center hidden bg-white rounded-b-lg ease-in-out h-24 w-32'>
                 <div>
                     <ul className='mx-4 space-y-4 text-gray'>
                         <li>

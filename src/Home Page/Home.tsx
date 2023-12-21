@@ -1,4 +1,4 @@
-import Contacts from "../Contact/Contacts";
+import Contacting from "../Contact/Contacting";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import About from "./About/About";
@@ -18,7 +18,7 @@ export default function Home() {
             <About />
             <Donation />
             <Volunteer />
-            <Contacts />
+            <Contacting />
             <Footer />
         </div>
     )

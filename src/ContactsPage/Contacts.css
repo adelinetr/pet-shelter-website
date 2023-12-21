@@ -1,0 +1,14 @@
+.contacts-hero {
+  background-image: url(./contacts-hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 98%;
+  height: 98vh;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}/*# sourceMappingURL=Contacts.css.map */

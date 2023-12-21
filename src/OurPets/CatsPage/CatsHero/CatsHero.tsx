@@ -1,10 +1,10 @@
-import OurPetsHero from '../../OurPetsHero'
+import HeroSection from '../../../HeroSection'
 import  './CatsHero.css'
 
 export default function CatsHero() {
     return(
         <section>
-            <OurPetsHero 
+            <HeroSection
             mobileHeroClass='cat-mobile bg-img md:hidden'
             heroClass='cat-hero hidden bg-img cat-mobile md:block'
             heading='Our Cats'

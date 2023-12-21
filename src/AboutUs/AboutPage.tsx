@@ -1,4 +1,4 @@
-import Contacts from "../Contact/Contacts";
+import Contacting from "../Contact/Contacting";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Donation from "../Home Page/Donation/Donation";
@@ -14,7 +14,7 @@ export default function AboutPage() {
             <ShelterTeam />
             <TeamMembers />
             <Donation />
-            <Contacts />
+            <Contacting />
             <Footer />
         </div>
     )
