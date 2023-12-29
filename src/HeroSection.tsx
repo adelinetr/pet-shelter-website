@@ -8,8 +8,8 @@ export default function HeroSection (props : {mobileHeroClass:string, heroClass:
             <div className={props.heroClass}></div>
             
             <div className='absolute mx-4 md:mx-12 text-white'>
-                <h3 className='mt-32'>{props.heading}</h3>
-                <div className="flex flex-col space-y-6">
+                <h3 className='mt-32 xl:text-7xl'>{props.heading}</h3>
+                <div className="flex flex-col space-y-6 xl:text-lg">
                     <p className='text-lightGray md:w-1/2'>{props.text}</p>
                     <p className="text-lightGray md:w-1/2">{props.text2}</p>
                 </div>
