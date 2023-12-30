@@ -4,6 +4,7 @@ import Header from "../Header/Header";
 import BecomeAVolunteer from "./BecomeAVolunteer/Become";
 import HeroVolunteer from "./HeroVolunteer/HeroVolunteer";
 import Responsibilities from "./Responsibilities/Responsibilities";
+import Training from "./Training/Training";
 
 export default function Volunteer() {
     return(
@@ -12,6 +13,7 @@ export default function Volunteer() {
             <HeroVolunteer />
             <Responsibilities />
             <BecomeAVolunteer />
+            <Training />
             <Contacting />
             <Footer />
         </div>
