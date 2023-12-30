@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Administrative from '../images/Administrative'
 import Feeding from '../images/Feeding'
 import Playing from '../images/Playing'
@@ -6,6 +7,12 @@ import CatImg from '../images/cat.png'
 import ResponsibilitiesPoints from './Points'
 
 export default function Responsibilities () {
+    const [selectedBtn, selectBtn] = useState("")
+
+    function buttonCallback(heading:string){
+        selectBtn(heading)
+    }
+
     return(
         <section className='mx-6 max-w-max'>
         <div className="h-fit flex flex-col mb-40 md:flex-row md:space-x-20 md:mx-44 md:mt-20">
@@ -25,18 +32,26 @@ export default function Responsibilities () {
                 </div>
 
                 <div className='mt-14 md:mt-24 flex flex-col items-center md:flex-row md:space-y-0 space-y-6 md:space-x-5'>
+                    
                     <ResponsibilitiesPoints
                     icon={Administrative}
                     heading='Administrative Tasks'
+                    callback={buttonCallback}
+                    isSelected={selectedBtn === 'Administrative Tasks'}
                     />
                     <ResponsibilitiesPoints 
                     icon={Feeding}
                     heading='Feeding'
+                    callback={buttonCallback}
+                    isSelected={selectedBtn === 'Feeding'}
                     />
                     <ResponsibilitiesPoints
                     icon={Playing}
                     heading='Playing & Socialising'
+                    callback={buttonCallback}
+                    isSelected={selectedBtn === 'Playing & Socialising'}
                     />
+
                 </div>
             </div>
         </div>
