@@ -26,7 +26,7 @@ export default function Responsibilities () {
             <div className='md:w-1/2'>
                 <div>
                     <h3 className='mt-12 text-center md:text-6xl md:w-max'>Responsibilities and Benefits</h3>
-                    <p className='mt-8 md:w-fit md:text-lg text-gray font-text font-light'>
+                    <p className='mt-8 md:w-fit leading-relaxed md:text-lg text-gray font-text font-light'>
                         As a volunteer, you'll play a vital role in providing care, support, and love to our furry residents, making a tangible difference in their lives. Responsibilities may include feeding, grooming, socializing with animals, assisting with administrative tasks, or helping with events.
                     </p>
                 </div>
