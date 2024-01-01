@@ -1,18 +1,19 @@
 .mobile-donation-hero{
-    background-image: url(./images/donation-hero.png);
+    background-image: url(../images/donation-hero.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 98%;
-    height: 98h;
+    height: 98vh;
     margin-left: auto;
     margin-right: auto;
+    background-position-x: 70%;
 }
 
 .donation-hero{
-    background-image: url(./images/donation-hero.png);
+    background-image: url(../images/donation-hero.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 98%;
+    width: 99%;
     height: 98vh;
     margin-left: auto;
     margin-right: auto;
