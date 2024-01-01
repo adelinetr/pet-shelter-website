@@ -8,12 +8,12 @@ export default function HelpDonation () {
         <section className="my-32 mx-6">
             <div className="flex flex-col justify-center items-center">
                 <h3 className="text-center">How Donations Help</h3>
-                <p className="font-text text-gray md:w-1/3 mt-4 leading-relaxed text-center">
+                <p className="font-text text-gray lg:w-1/3 mt-4 leading-relaxed text-center">
                     Every donation, regardless of its size, plays a pivotal role in transforming lives and creating brighter futures for animals. Here's how your generous contributions make a difference:
                 </p>
             </div>
 
-            <div className="flex space-y-20 mt-16 flex-col justify-center items-center md:space-y-0 md:flex-row md:mx-20 md:gap-12">
+            <div className="flex space-y-20 mt-16 flex-col justify-center items-center lg:space-y-0 lg:flex-row lg:mx-20 lg:gap-12">
                 <DonationPoints
                 img={NutritionImg}
                 heading="Nutrition & Feeding: "

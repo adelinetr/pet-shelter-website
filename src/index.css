@@ -14,6 +14,10 @@
         @apply uppercase tracking-widest text-gray text-sm;
     }
 
+    p{
+        @apply font-text text-base font-light leading-relaxed;
+    }
+
     .basic-button{
         @apply  px-10 py-2 rounded-lg font-medium uppercase tracking-wide; 
     }

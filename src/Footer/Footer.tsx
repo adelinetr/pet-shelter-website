@@ -3,14 +3,14 @@ import FooterComponent from "./FooterComponent";
 export default function Footer() {
     return(
         <div className="bg-[#1A1A1A]">
-            <div className="flex flex-col items-center mx-auto justify-center bg-[#1A1A1A] h-fit py-32 space-y-10 lg:grid lg:grid-cols-3 lg:space-y-0 lg:max-w-7xl">
-                <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center mx-auto justify-center bg-[#1A1A1A] h-fit py-32 space-y-10 lg:grid lg:items-start lg:grid-cols-3 lg:space-y-0 lg:space-x-20 lg:max-w-7xl">
+                <div className="flex flex-col lg:mx-7 items-center justify-center lg:items-start">
                     <h2 className="font-heading text-mainOrange text-3xl">PetShelter</h2>
-                    <p className="text-lighterGray text-xs w-90 font-extralight text-center mt-4 leading-5 lg:w-80">We strongly believe in providing a better life for stray animals thanks to our organization.</p>
+                    <p className="text-lighterGray text-sm w-90 text-center mt-4 lg:w-80 lg:text-left">We strongly believe in providing a better life for stray animals thanks to our organization.</p>
                 </div>
 
                 
-                <div className="flex flex-col lg:flex-row lg:items-baseline justify-between space-y-8 lg:space-y-0 lg:w-full">
+                <div className="flex flex-col lg:flex-row lg:items-start justify-between space-y-8 lg:space-y-0 lg:w-full">
                         <FooterComponent 
                         heading="All Pets"
                         page1="Our Cats"
