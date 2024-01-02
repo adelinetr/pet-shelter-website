@@ -13,21 +13,21 @@ export default function HelpDonation () {
                 </p>
             </div>
 
-            <div className="flex space-y-20 mt-16 flex-col justify-center items-center lg:space-y-0 lg:flex-row lg:mx-20 lg:gap-12">
+            <div className="flex space-y-20 mt-16 flex-col justify-start items-start lg:space-y-0 lg:flex-row lg:mx-20 lg:gap-12">
                 <DonationPoints
                 img={NutritionImg}
                 heading="Nutrition & Feeding: "
-                text="Your donations help us provide nutritious food tailored to the specific dietary needs of each animal, ensuring they receive the essential nutrients for optimal health and vitality."
+                text="Your donations help us provide nutritious food tailored to the specific dietary needs of each animal."
                 />
                 <DonationPoints
                 img={ComfortImg}
                 heading="Shelter & Comfort: "
-                text="Your support helps maintain a safe, clean, and comfortable environment for animals, providing shelter, bedding, and enrichment activities that promote physical and emotional well-being."
+                text="Your support helps maintain a safe, clean, and comfortable environment for animals."
                 />
                 <DonationPoints
                 img={MedicineImg}
-                heading="Medical Care & Rehabilitation: "
-                text="Contributions support veterinary care, vaccinations, spaying/neutering, and specialized treatments for animals with medical needs, enabling them to recover and thrive."
+                heading="Medical Care: "
+                text="Contributions support veterinary care, vaccinations, spaying/neutering, and specialized treatments."
                 />
             </div>
         </section>

@@ -1,10 +1,6 @@
 import { useState } from 'react'
-import Administrative from '../images/Administrative'
-import Feeding from '../images/Feeding'
-import Playing from '../images/Playing'
 import CatImg from '../images/cat.png'
 
-import ResponsibilitiesPoints from './Points'
 
 export default function Responsibilities () {
     const [selectedBtn, selectBtn] = useState("")
@@ -15,45 +11,23 @@ export default function Responsibilities () {
 
     return(
         <section className='mx-6 max-w-max'>
-        <div className="h-fit flex flex-col mb-40 lg:flex-row lg:space-x-20 lg:mx-44 lg:mt-20">
-            <div className='flex flex-col'>
+        <div className="h-fit flex flex-col mb-40 lg:flex-row lg:space-x-20 lg:mx-32 lg:mt-20">
+            <div className='flex flex-col md:w-1/3 h-fit'>
                 <img 
-                className='w-full h-full object-cover'
+                className='h-full w-max'
                 src={CatImg} 
                 alt='Img by "https://www.freepik.com/free-psd/beautiful-cute-cat-isolated_87156276.htm#query=cats%20png&position=44&from_view=search&track=ais&uuid=93131bb6-be3b-4738-ad88-de178425318c"'
                 />   
             </div>
 
-            <div className='lg:w-1/2'>
+            <div className='md:w-1/2'>
                 <div>
-                    <h3 className='mt-12 text-center lg:text-6xl lg:w-fit lg:text-left'>Responsibilities and Benefits</h3>
-                    <p className='mt-8 md:w-fit leading-relaxed md:text-lg text-gray font-text font-light'>
+                    <h3 className='mt-12 text-center lg:text-5xl lg:w-fit lg:text-left'>Responsibilities and Benefits</h3>
+                    <p className='mt-8 md:w-fit md:text-base xl:text-lg text-gray font-text font-light'>
                         As a volunteer, you'll play a vital role in providing care, support, and love to our furry residents, making a tangible difference in their lives. Responsibilities may include feeding, grooming, socializing with animals, assisting with administrative tasks, or helping with events.
                     </p>
                 </div>
 
-                <div className='mt-14 md:mt-24 flex flex-col items-center xl:flex-row xl:space-y-0 space-y-6 xl:space-x-5'>
-                    
-                    <ResponsibilitiesPoints
-                    icon={Administrative}
-                    heading='Administrative Tasks'
-                    callback={buttonCallback}
-                    isSelected={selectedBtn === 'Administrative Tasks'}
-                    />
-                    <ResponsibilitiesPoints 
-                    icon={Feeding}
-                    heading='Feeding'
-                    callback={buttonCallback}
-                    isSelected={selectedBtn === 'Feeding'}
-                    />
-                    <ResponsibilitiesPoints
-                    icon={Playing}
-                    heading='Playing & Socialising'
-                    callback={buttonCallback}
-                    isSelected={selectedBtn === 'Playing & Socialising'}
-                    />
-
-                </div>
             </div>
         </div>
         </section>
