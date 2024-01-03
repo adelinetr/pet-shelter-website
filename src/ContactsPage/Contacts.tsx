@@ -14,6 +14,7 @@ export default function Contacts() {
             heading="Our Contacts"
             text="For after-hours emergencies or to report a lost or found pet, please call our emergency line: (123) 789-0123."
             btnClass='hidden'
+            adoptionText='hidden'
             />
             <Contacting />
             <Footer />

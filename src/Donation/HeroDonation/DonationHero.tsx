@@ -10,6 +10,7 @@ export default function DonationHero() {
             heading="How Your Donation Helps"
             text="Your support is crucial in helping us provide care, shelter, and hope to animals in need."
             btnClass="hidden"
+            adoptionText='hidden'
             />
         </div>
     )

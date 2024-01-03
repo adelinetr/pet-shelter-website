@@ -1,14 +1,6 @@
-import { useState } from 'react'
 import CatImg from '../images/cat.png'
 
-
 export default function Responsibilities () {
-    const [selectedBtn, selectBtn] = useState("")
-
-    function buttonCallback(heading:string){
-        selectBtn(heading)
-    }
-
     return(
         <section className='mx-6 max-w-max'>
         <div className="h-fit flex flex-col mb-40 lg:flex-row lg:space-x-20 lg:mx-32 lg:mt-20">
