@@ -1,7 +1,7 @@
 import DonationPoints from './DonationPoints'
 import DonationImg from '../images/donation-img1.png'
 
-export default function Donation() {
+export default function DonationSection() {
     return(
         <section className='flex-col flex items-center mx-auto mt-24 md:mt-4 h-fit mb-20 xl:mb-40 xl:max-w-7xl'>
         <div className='justify-center items-center flex flex-col md:flex-row'>
@@ -33,7 +33,7 @@ export default function Donation() {
                 </div>
 
                 <div className='mt-16 md:mt-0 md:mx-auto md:justify-center md:flex'>
-                    <img className='rounded-lg md:w-fit object-cover md:h-96' src={DonationImg} alt="" />
+                    <img className='rounded-lg md:w-fit object-cover md:h-96' src={DonationImg} alt="Img by 'https://www.freepik.com/free-psd/cute-dog-portrait-isolated_38312087.htm#query=dogs%20png&position=0&from_view=search&track=ais&uuid=875f1c10-eab4-42e8-981d-442e76c5df34' Freepik" />
                 </div>
 
             </div>
