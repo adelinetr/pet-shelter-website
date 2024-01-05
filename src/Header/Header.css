@@ -1,8 +1,8 @@
 /*Hamburger Menu*/
 .hamburger {
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   transition: all 0.25s;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
@@ -15,7 +15,7 @@
 .middle-line,
 .bottom-line {
   position: absolute;
-  width: 45px;
+  width: 40px;
   height: 2px;
   top: 0;
   left: 0;
@@ -40,10 +40,18 @@
 
 .open {
   transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 
 .open .top-line {
-  transform: rotate(45deg) translateY(6px) translateX(6px);
+  transform: rotate(45deg) translateY(12px) translateX(9px);
+  -webkit-transform: rotate(45deg) translateY(12px) translateX(9px);
+  -moz-transform: rotate(45deg) translateY(12px) translateX(9px);
+  -ms-transform: rotate(45deg) translateY(12px) translateX(9px);
+  -o-transform: rotate(45deg) translateY(12px) translateX(9px);
 }
 
 .open .middle-line {
@@ -51,5 +59,9 @@
 }
 
 .open .bottom-line {
-  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  transform: rotate(-45deg) translateY(0px) translateX(-3px);
+  -webkit-transform: rotate(-45deg) translateY(0px) translateX(-3px);
+  -moz-transform: rotate(-45deg) translateY(0px) translateX(-3px);
+  -ms-transform: rotate(-45deg) translateY(0px) translateX(-3px);
+  -o-transform: rotate(-45deg) translateY(0px) translateX(-3px);
 }/*# sourceMappingURL=Header.css.map */

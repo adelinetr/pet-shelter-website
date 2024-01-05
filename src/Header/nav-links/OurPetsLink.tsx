@@ -10,14 +10,14 @@ export default function OurPetsLink() {
                 </svg>
             </Link>
 
-            <div className='group-hover:flex absolute z-10 items-center justify-center hidden bg-white rounded-b-lg ease-in-out h-24 w-32'>
+            <div className='hidden relative lg:group-hover:flex lg:text-base lg:text-center justify-center items-center lg:h-8 text-right mt-10 lg:mt-2 space-y-4 text-lighterGray lg:text-white text-2xl font-light h-28 lg:w-26'>
                 <div>
-                    <ul className='mx-4 space-y-4 text-gray'>
+                    <ul className='mr-8 lg:bg-lightGray lg:absolute px-12 w-max py-4 lg:bg-opacity-10 lg:backdrop-blur-md rounded-lg right-0 top-0 left-0 space-y-8'>
                         <li>
-                            <Link to='/our-pets/cats' className='hover:text-mainOrange duration-200'>Our Cats</Link>
+                            <Link to='/our-pets/cats' className='hover:text-lighterGray duration-200'>Our Cats</Link>
                         </li>
                         <li>
-                            <Link to='/our-pets/dogs' className='hover:text-mainOrange duration-200' >Our Dogs</Link>
+                            <Link to='/our-pets/dogs' className='hover:text-lighterGray duration-200' >Our Dogs</Link>
                         </li>
                     </ul>
                 </div>
