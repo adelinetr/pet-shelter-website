@@ -4,7 +4,6 @@ import OurPetsLink from './nav-links/OurPetsLink'
 import ServicesLink from './nav-links/ServicesLink'
 import Contacts from './nav-links/Contacts'
 import AboutUs from './nav-links/AboutUs'
-import Languages from './nav-links/Languages'
 import { useState } from 'react'
 
 
@@ -19,9 +18,9 @@ export default function Header() {
     
     return(
         <header className='relative flex flex-col lg:justify-between lg:items-center'>
-        <div className='absolute flex lg:flex-col lg:justify-start lg:items-center'>
+        <div className='absolute flex lg:flex-col lg:justify-center lg:items-center'>
             <div 
-            className="w-full relative md:my-2 lg:mx-16"
+            className="w-full relative md:my-2 lg:mx-16 md:w-fit"
             > 
                 <div className='absolute flex-col z-20 justify-center items-center lg:relative flex lg:mt-0'>
                     <div className='flex flex-row w-screen lg:w-fit lg:mx-6 justify-between items-center'>
@@ -40,34 +39,17 @@ export default function Header() {
                     </div>
                 </div>
 
-                <div id='nav-links' className={`${showMenu ? 'flex' : 'hidden'} absolute w-screen h-screen lg:h-10 lg:relative lg:w-full lg:flex flex-col lg:flew-row items-center lg:items-start lg:justify-between bg-[#1A1A1A] text-white lg:bg-opacity-0 mx-0 px-0 z-10`}>
-                    <nav className='h-screen lg:space-x-24 z-20 flex flex-col space-y-12 text-4xl md:space-y-0 md:text-lg justify-center items-start lg:flex-row lg:mt-3'> 
+                <div id='nav-links' className={`${showMenu ? 'flex' : 'hidden'} absolute w-screen h-screen lg:h-10 lg:relative lg:w-fit lg:flex flex-col lg:flew-row items-center bg-[#1A1A1A] text-white lg:bg-opacity-0 mx-0 px-0 z-10`}>
+                    <nav className='h-screen lg:space-x-20 z-20 flex flex-col space-y-12 text-4xl md:space-y-0 md:text-base justify-center items-start lg:flex-row lg:mt-3'> 
                             <HomeLink />
                             <AboutUs />
                             <OurPetsLink />
                             <ServicesLink />
                             <Contacts />
                     </nav>
-                    <div className='absolute z-20 h-fit w-full lg:bottom-12 lg:left-96 lg:mt-1'>
-                        <Languages />
-                    </div>
                 </div>
 
             </div>
-
-                <div>
-                    <nav className='nav-links lg:hidden'> 
-                        <HomeLink />
-                        <AboutUs />
-                        <OurPetsLink />
-                        <ServicesLink />
-                        <Contacts />
-                    </nav>
-
-                    <div className='lg:hidden'>
-                        <Languages />
-                    </div>
-                </div>
         </div>
         </header>
     )

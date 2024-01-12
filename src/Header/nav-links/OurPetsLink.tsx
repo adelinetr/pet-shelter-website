@@ -18,7 +18,7 @@ export default function OurPetsLink() {
                 </svg>
             </Link>
 
-            <div className={`${showLinks ? 'hidden' : 'flex'} relative lg:group-hover:flex lg:text-base lg:text-center justify-center items-center lg:h-8 text-right mt-10 lg:mt-2 space-y-4 text-lighterGray lg:text-white text-2xl font-light h-28 lg:w-26`}>
+            <div className={`${showLinks ? 'hidden' : 'flex'} relative lg:group-hover:flex lg:text-sm lg:text-center justify-center items-center lg:h-8 text-right mt-10 lg:mt-2 space-y-4 text-lighterGray lg:text-white text-2xl font-light h-28 lg:w-26`}>
                 <div>
                     <ul className=' lg:bg-[#BCBCBC] lg:absolute px-12 w-max py-4 lg:bg-opacity-10 lg:backdrop-blur-md rounded-lg right-0 top-0 left-0 space-y-8'>
                         <li>
