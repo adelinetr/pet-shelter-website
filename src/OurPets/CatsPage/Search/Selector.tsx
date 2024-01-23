@@ -27,7 +27,7 @@ export default function Selector(props: {
   return (
     <div className=" mx-6">
       <Box>
-        <FormControl className="w-60">
+        <FormControl className="w-90 md:w-60">
           <InputLabel id="demo-simple-select-label">{props.name}</InputLabel>
           <Select
             labelId="demo-simple-select-label"

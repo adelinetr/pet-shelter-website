@@ -20,15 +20,15 @@ export default function Header() {
         <header className='relative flex flex-col lg:justify-between lg:items-center'>
         <div className='absolute flex lg:flex-col lg:justify-center lg:items-center'>
             <div 
-            className="w-full relative md:my-2 lg:mx-16 md:w-fit"
+            className="w-full relative  lg:mx-16 md:w-fit"
             > 
-                <div className='absolute flex-col z-20 justify-center items-center lg:relative flex lg:mt-0'>
+                <div className='absolute flex-col w- z-20 justify-center items-center lg:relative flex lg:mt-0'>
                     <div className='flex flex-row w-screen lg:w-fit lg:mx-6 justify-between items-center'>
                         <div className='relative mt-8 lg:mt-0 mx-8'>
                             <h3 className='text-3xl relative font-medium font-logo md:mt-8 text-white lg:items-center'>PetShelter</h3>
                         </div>
                             
-                        <div onClick={toggleMenu} id='menu' className={`${isOpen ? 'open' : ''} relative top-3 right-7`}>
+                        <div onClick={toggleMenu} id='menu' className={`${isOpen ? 'open' : ''} relative top-3 right-12`}>
                             <button type="button" id="menu-btn"
                             className="z-10 hamburger lg:hidden focus:outline-none">
                                 <span className="top-line"></span>
@@ -40,7 +40,7 @@ export default function Header() {
                 </div>
 
                 <div id='nav-links' className={`${showMenu ? 'flex' : 'hidden'} absolute w-screen h-screen lg:h-10 lg:relative lg:w-fit lg:flex flex-col lg:flew-row items-center bg-[#1A1A1A] text-white lg:bg-opacity-0 mx-0 px-0 z-10`}>
-                    <nav className='h-screen lg:space-x-20 z-20 flex flex-col space-y-12 text-4xl md:space-y-0 md:text-base justify-center items-start lg:flex-row lg:mt-3'> 
+                    <nav className='h-screen lg:space-x-20 z-20 flex flex-col space-y-12 text-4xl lg:space-y-0 lg:text-base justify-center items-start lg:flex-row lg:mt-3'> 
                             <HomeLink />
                             <AboutUs />
                             <OurPetsLink />

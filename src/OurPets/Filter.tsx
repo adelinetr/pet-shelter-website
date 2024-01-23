@@ -4,7 +4,7 @@ import { IoIosSearch } from "react-icons/io";
 export default function Filter () {
     return(
         <section>
-            <div className="flex md:flex-row h-max mb-80 justify-center items-center">
+            <div className="flex flex-col space-y-6 md:space-y-0  md:flex-row h-max mb-20 justify-center items-center">
                 <Selector
                 label="city"
                 option="All cities"
@@ -17,12 +17,12 @@ export default function Filter () {
                 />
                 <Selector
                 label="age"
-                option="1-2 months"
-                option2="3-6 months"
-                option3="7 months - 1 year"
-                option4="1-3 years"
-                option5="4-8 years"
-                option6="8+ years"
+                option="All ages"
+                option2="1-2 months"
+                option3="3-6 months"
+                option4="7 months - 1 year"
+                option5="2-5 years"
+                option6="5+ years"
                 name="Age"
                 value="age" />
                 
