@@ -1,23 +1,20 @@
+import Selector from "../Search/Selector";
 import CatsAPIImage from "./CatsAPIImage";
 import { useEffect, useState } from "react";
 
 export interface Cat {
   id: string;
   url: string;
-  name: string; // Make sure 'name' is optional in the Cat type
-  location: string; // Make sure 'location' is optional in the Cat type
+  name: string;
+  location: string;
 }
 
 export default function CatsApiList() {
   const catsNamesList = ['Luna', 'Rocky', 'Milo', 'Biscuit'];
-  const locationsList = [
-    'Klaipeda, Lithuania',
-    'Vilnius, Lithuania',
-    'Palanga, Lithuania',
-    'Kaunas, Lithuania'
-  ];
+  const locationsList = ['Klaipėda', 'Vilnius', 'Palanga', 'Kaunas'];
 
   const [cats, setCats] = useState<Cat[]>([]);
+  const [selectedCity, setSelectedCity] = useState<string>('');
 
   useEffect(() => {
     const fetchCats = async () => {
@@ -26,7 +23,7 @@ export default function CatsApiList() {
           const response = await fetch('https://api.thecatapi.com/v1/images/search?limit=8');
           const data = await response.json();
 
-          const filteredCats: Cat[] = data
+          const cats: Cat[] = data
             .filter((cat: Cat) => cat.url.toLowerCase().endsWith('.jpg'))
             .map((cat: Cat) => ({
               ...cat,
@@ -34,7 +31,7 @@ export default function CatsApiList() {
               location: getRandomElement(locationsList) || '',
             }));
 
-          setCats(prevCats => [...prevCats, ...filteredCats]);
+          setCats((prevCats) => [...prevCats, ...cats]);
         }
       } catch (error) {
         console.error('Error fetching cats:', error);
@@ -44,20 +41,44 @@ export default function CatsApiList() {
     fetchCats();
   }, []);
 
-  const getRandomElement = (arr: any[]) => arr.length ? arr[Math.floor(Math.random() * arr.length)] : undefined;
+  const getRandomElement = (arr: any[]) =>
+    arr.length ? arr[Math.floor(Math.random() * arr.length)] : undefined;
+
+  const handleCityChange = (selected: string) => {
+    setSelectedCity(selected);
+  };
+
+  const filteredCats = cats.filter((cat) => {
+    if (selectedCity === 'All cities') {
+      return true; // Show all cats
+    } else {
+      return cat.location === selectedCity;
+    }
+  });
 
   return (
-    <div className="max-w-7xl flex flex-col mx-auto">
-      <div className="mx-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {cats.filter(cat => cat.location === 'Vilnius, Lithuania').map((cat, index) => (
-          <CatsAPIImage
-            key={index}
-            name={cat.name}
-            location={cat.location}
-            cat={cat}
-          />
-        ))}
+    <section className="flex flex-col justify-center items-center ">
+      <div className="flex flex-col space-y-6 md:space-y-0 md:flex-row h-max mt-20 mb-20 justify-center items-center">
+        <Selector
+          label="city"
+          option="All cities"
+          option2="Vilnius"
+          option3="Kaunas"
+          option4="Klaipėda"
+          option5="Palanga"
+          name="City"
+          value={selectedCity}
+          onSelect={handleCityChange}
+        />
       </div>
-    </div>
+
+      <div className="max-w-7xl flex flex-col mx-auto">
+        <div className="md:mx-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+          {filteredCats.map((cat, index) => (
+            <CatsAPIImage key={index} name={cat.name} location={cat.location} cat={cat} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }

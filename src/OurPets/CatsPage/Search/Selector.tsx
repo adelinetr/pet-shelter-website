@@ -6,7 +6,9 @@ import {
   Select,
   SelectChangeEvent,
 } from "@mui/material";
+
 import { useState } from "react";
+
 
 export default function Selector(props: {
   label: string;
@@ -17,7 +19,8 @@ export default function Selector(props: {
   option5: string;
   option6?: string;
   name: string;
-  value: string
+  value: string;
+  onSelect?: (selected: string) => void; 
 }) {
   const [value, setValue] = useState("");
   const handleChange = (event: SelectChangeEvent) => {
@@ -25,16 +28,19 @@ export default function Selector(props: {
   };
 
   return (
-    <div className=" mx-6">
+    <div className="flex space-x-6 mx-6">
       <Box>
-        <FormControl className="w-90 md:w-60">
+        <FormControl className="w-90 md:w-90">
           <InputLabel id="demo-simple-select-label">{props.name}</InputLabel>
           <Select
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             value={value}
             label={`${props.label}`}
-            onChange={handleChange}
+            onChange={(event) => {
+              handleChange(event);
+              props.onSelect && props.onSelect(event.target.value as string);
+            }}
           >
             <MenuItem value={props.option}>{props.option}</MenuItem>
             <MenuItem value={props.option2}>{props.option2}</MenuItem>

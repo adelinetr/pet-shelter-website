@@ -38,7 +38,7 @@ export default function DogsAPIImage(props: { name: string; location: string }) 
             <div className="w-[220px] overflow-hidden h-[280px]">
                 <img
                 src={dog.url}
-                className="rounded-md cursor-pointer object-cover hover:scale-110 hover:brightness-75  duration-300"
+                className="cursor-pointer object-cover hover:scale-110 hover:brightness-75  duration-300"
                 style={{ width: '210px', height: '280px', objectFit: 'cover' }}
                 alt={`Dog ${dog.id}`}
                 />

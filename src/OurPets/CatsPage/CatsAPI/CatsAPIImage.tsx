@@ -11,7 +11,7 @@ export default function CatAPIImage(props: { name: string; location: string; cat
             <div className="w-[170px] h-[220px]  md:w-[220px] md:h-[280px] overflow-hidden">
               <img
                 src={props.cat.url}
-                className="w-[170px] h-[220px]  md:w-[220px] md:h-[280px] rounded-md cursor-pointer object-cover hover:scale-110 hover:brightness-75 duration-300"
+                className="w-[170px] h-[220px]  md:w-[220px] md:h-[280px] cursor-pointer object-cover hover:scale-110 hover:brightness-75 duration-300"
                 alt={`Cat ${props.cat.id}`}
               />
             </div>
