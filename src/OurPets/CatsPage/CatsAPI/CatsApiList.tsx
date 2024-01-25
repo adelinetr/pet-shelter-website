@@ -2,34 +2,12 @@ import Selector from "../Search/Selector";
 import CatsAPIImage from "./CatsAPIImage";
 import { useEffect, useState } from "react";
 
-export interface CarPart{
-  id: string;
-  name: string;
-}
-
-export interface Wheel extends CarPart{
-  rotate():string;
-}
-
-export interface Engine extends CarPart{
-  start():string;
-  stop():string;
-}
-
-export class EngineImpl{
-
-}
-
-
-
 export interface Cat {
   id: string;
   url: string;
   name: string;
   location: string;
 }
-
-
 
 export default function CatsApiList() {
   const catsNamesList = ['Luna', 'Rocky', 'Milo', 'Biscuit'];
@@ -44,7 +22,6 @@ export default function CatsApiList() {
         for (let i = 0; i < 10; i++) {
           const response = await fetch(`https://api.thecatapi.com/v1/images/search?limit=8&page=${i}`);
           const data = await response.json();
-
 
           const cats: Cat[] = data
             .filter((cat: Cat) => cat.url.toLowerCase().endsWith('.jpg'))
