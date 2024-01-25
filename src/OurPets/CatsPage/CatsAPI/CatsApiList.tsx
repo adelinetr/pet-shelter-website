@@ -10,31 +10,33 @@ export interface Cat {
 }
 
 export default function CatsApiList() {
-  const catsNamesList = ['Luna', 'Rocky', 'Milo', 'Biscuit'];
-  const locationsList = ['Klaipėda', 'Vilnius', 'Palanga', 'Kaunas'];
+  const catsNamesList = ["Luna", "Rocky", "Milo", "Biscuit"];
+  const locationsList = ["Klaipėda", "Vilnius", "Palanga", "Kaunas"];
 
   const [cats, setCats] = useState<Cat[]>([]);
-  const [selectedCity, setSelectedCity] = useState<string>('');
+  const [selectedCity, setSelectedCity] = useState<string>("");
 
   useEffect(() => {
     const fetchCats = async () => {
       try {
         for (let i = 0; i < 10; i++) {
-          const response = await fetch(`https://api.thecatapi.com/v1/images/search?limit=8&page=${i}`);
+          const response = await fetch(
+            `https://api.thecatapi.com/v1/images/search?limit=8&page=${i}`
+          );
           const data = await response.json();
 
           const cats: Cat[] = data
-            .filter((cat: Cat) => cat.url.toLowerCase().endsWith('.jpg'))
+            .filter((cat: Cat) => cat.url.toLowerCase().endsWith(".jpg"))
             .map((cat: Cat) => ({
               ...cat,
-              name: getRandomElement(catsNamesList) || '',
-              location: getRandomElement(locationsList) || '',
+              name: getRandomElement(catsNamesList) || "",
+              location: getRandomElement(locationsList) || "",
             }));
 
           setCats((prevCats) => [...prevCats, ...cats]);
         }
       } catch (error) {
-        console.error('Error fetching cats:', error);
+        console.error("Error fetching cats:", error);
       }
     };
 
@@ -49,8 +51,8 @@ export default function CatsApiList() {
   };
 
   const filteredCats = cats.filter((cat) => {
-    if (selectedCity === 'All cities' || selectedCity === '') {
-      return true; 
+    if (selectedCity === "All cities" || selectedCity === "") {
+      return true;
     } else {
       return cat.location === selectedCity;
     }
@@ -75,7 +77,12 @@ export default function CatsApiList() {
       <div className="max-w-7xl flex flex-col mx-auto">
         <div className="md:mx-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
           {filteredCats.map((cat, index) => (
-            <CatsAPIImage key={index} name={cat.name} location={cat.location} cat={cat} />
+            <CatsAPIImage
+              key={index}
+              name={cat.name}
+              location={cat.location}
+              cat={cat}
+            />
           ))}
         </div>
       </div>
