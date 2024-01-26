@@ -35,14 +35,13 @@ export default function DogsAPIImage(props: {
 
   return (
     <div className="flex flex-col justify-start align-baseline">
-      <div className="mx-6">
+      <div>
         {dog && (
           <div className="my-6">
-            <div className="w-[220px] overflow-hidden h-[280px]">
+            <div className="w-[170px] h-[220px]  md:w-[220px] md:h-[280px] overflow-hidden">
               <img
                 src={dog.url}
-                className="cursor-pointer object-cover hover:scale-110 hover:brightness-75  duration-300"
-                style={{ width: "210px", height: "280px", objectFit: "cover" }}
+                className="w-[170px] h-[220px]  md:w-[220px] md:h-[280px] cursor-pointer object-cover hover:scale-110 hover:brightness-75 duration-300"
                 alt={`Dog ${dog.id}`}
               />
             </div>

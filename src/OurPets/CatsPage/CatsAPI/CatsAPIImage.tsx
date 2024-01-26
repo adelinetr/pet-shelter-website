@@ -8,7 +8,7 @@ export default function CatAPIImage(props: {
 }) {
   return (
     <div className="flex flex-col justify-start align-baseline">
-      <div className="mx-0 space-x-15">
+      <div className="space-x-15">
         <div key={props.cat.id} className="my-7">
           <div className="w-[170px] h-[220px]  md:w-[220px] md:h-[280px] overflow-hidden">
             <img
