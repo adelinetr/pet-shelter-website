@@ -7,7 +7,7 @@ export default function ShelterTeam() {
                 <div className='flex flex-col items-center justify-center w-90 mt-6 md:w-80'>
                     <img 
                     src={Image} 
-                    className='rounded-lg object-cover h-72 w-90 lg:h-90' 
+                    className='w-full rounded-lg object-cover h-72 lg:w-90 lg:h-90' 
                     alt="" 
                     />
                 </div>

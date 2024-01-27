@@ -14,7 +14,7 @@ export default function About() {
 
     return(
         <section className='flex flex-col lg:flex-col lg:justify-center lg:items-center lg:mb-32 xl:mb-2'>
-        <div className="h-screen max-w-xl mx-10 md:mx-16 mb-10 mt-14 md:mb-24 lg:max-w-5xl xl:max-w-7xl xl:mb-2">
+        <div className="h-screen md:h-fit max-w-xl mx-10 md:mx-16 mb-10 mt-14 md:mb-16 lg:max-w-5xl xl:max-w-7xl xl:mb-2">
             <div className='md:flex md:flex-col md:gap-2 md:max-w-6xl'>
                 <div className="text-left mt-14 md:mt-6">
                     <h3>About us</h3>

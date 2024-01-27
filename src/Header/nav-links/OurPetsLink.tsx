@@ -48,10 +48,10 @@ export default function OurPetsLink() {
       <div
         className={`${
           showLinks ? "hidden" : "flex"
-        } relative lg:group-hover:flex lg:text-sm lg:text-center justify-center items-center lg:h-8 text-left mt-10 lg:mt-2 space-y-4 text-lighterGray lg:text-white text-2xl font-light h-28 lg:w-26`}
+        } relative lg:group-hover:flex lg:text-sm lg:text-center justify-center items-center lg:h-8 text-left mt-6 lg:mt-2 space-y-4 text-lighterGray lg:text-white text-2xl font-light h-28 lg:w-26`}
       >
         <div>
-          <ul className=" lg:bg-[#BCBCBC] absolute lg:px-12 lg:w-max py-2 lg:py-5 lg:bg-opacity-10 lg:backdrop-blur-md rounded-lg right-0 top-0 left-0 space-y-8">
+          <ul className="lg:bg-[#BCBCBC] absolute lg:px-12 lg:w-max py-2 lg:py-5 lg:bg-opacity-10 lg:backdrop-blur-md rounded-lg right-0 top-0 left-0 space-y-8">
             <li>
               <Link
                 to="/our-pets/cats"

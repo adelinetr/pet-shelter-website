@@ -8,7 +8,7 @@ export default function AboutUs() {
         <div className="about-hero hidden md:block rounded-lg"></div>
 
         <div className="absolute flex flex-col justify-center items-center text-white text-center">
-          <h3 className="relative mt-96 lg:mt-72 lg:text-6xl">
+          <h3 className="relative mt-96 lg:mt-72 lg:text-6xl w-90 lg:w-max">
             About Our Pet Shelter
           </h3>
           <p className="font-light w-80">
