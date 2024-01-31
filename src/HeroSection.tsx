@@ -1,4 +1,3 @@
-import AdoptionComponent from "./AdoptionApplication/AdoptionComponent";
 import Button from "./Button";
 
 
@@ -30,10 +29,6 @@ export default function HeroSection(props: {
           >
             <Button name="Adoption Application" />
             <Button name="How to Take Care" />
-          </div>
-
-          <div className={`${props.adoptionText}`}>
-            <AdoptionComponent />
           </div>
         </div>
       </div>

@@ -9,8 +9,7 @@ export default function AdoptionHero () {
             mobileHeroClass='adoption-mobile-hero bg-img md:hidden'
             heading='Adopting a pet '
             text="Your journey towards companionship begins here, and we're excited to guide you through the rewarding process of welcoming a new member into your home."
-            btnClass='hidden'
-            adoptionText='block' />
+            btnClass='hidden' />
         </section>
     )
 }
