@@ -9,7 +9,6 @@ import {
 
 import { useState } from "react";
 
-
 export default function Selector(props: {
   label: string;
   option: string;
@@ -20,7 +19,7 @@ export default function Selector(props: {
   option6?: string;
   name: string;
   value: string;
-  onSelect?: (selected: string) => void; 
+  onSelect?: (selected: string) => void;
 }) {
   const [value, setValue] = useState("");
   const handleChange = (event: SelectChangeEvent) => {

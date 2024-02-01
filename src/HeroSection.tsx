@@ -1,6 +1,5 @@
 import Button from "./Button";
 
-
 export default function HeroSection(props: {
   mobileHeroClass: string;
   heroClass: string;
@@ -8,9 +7,8 @@ export default function HeroSection(props: {
   text: string;
   text2?: string;
   btnClass?: string;
-  adoptionText?: 'hidden' | 'block'
+  adoptionText?: "hidden" | "block";
 }) {
-
   return (
     <section className="w-full">
       <div className="mx-1 flex flex-col h-screen justify-center items-base">
