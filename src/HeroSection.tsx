@@ -17,7 +17,11 @@ export default function HeroSection(props: {
 
         <div className="absolute mx-4 md:mx-12 text-white text-center md:text-left">
           <h3 className="mt-72 md:mt-32 xl:text-7xl">{props.heading}</h3>
-          <div className="flex flex-col space-y-6 xl:text-lg">
+          <div
+            data-aos-duration="2000"
+            data-aos="fade-up"
+            className="flex flex-col space-y-6 xl:text-lg"
+          >
             <p className=" text-lightGray md:w-1/2">{props.text}</p>
             <p className="text-lightGray md:w-1/2">{props.text2}</p>
           </div>

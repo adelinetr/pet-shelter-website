@@ -14,8 +14,7 @@ export default function ShelterTeam() {
 
         <div className="md:w-1/2">
           <h3>PetShelter Team</h3>
-          <p data-aos-duration="2000"
-            data-aos="fade-up" className="md:w-full">
+          <p data-aos-duration="2000" data-aos="fade-up" className="md:w-full">
             At the heart of PetShelter is a passionate and dedicated team of
             individuals who share a deep love for animals and a profound
             commitment to making a difference. We are not just colleagues; we

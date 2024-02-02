@@ -5,7 +5,11 @@ export default function PlanSection() {
   return (
     <section className="flex flex-col justify-center items-center mx-auto max-w-7xl">
       <div className=" mx-6 h-fit md:pt-12 pb-12 mt-16 flex flex-col items-center justify-center md:flex-row md:mx-12 md:space-x-20 md:h-screen">
-        <div className="space-y-6 md:w-1/2 ">
+        <div
+          data-aos-duration="2000"
+          data-aos="fade-down-right"
+          className="space-y-6 md:w-1/2 "
+        >
           <img src={Img1} className="rounded-lg" alt="" />
           <img src={Img2} className="rounded-lg" alt="" />
         </div>

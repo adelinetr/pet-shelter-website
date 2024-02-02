@@ -5,7 +5,7 @@ export default function FamilyPhotos() {
   return (
     <section>
       <div className="flex flex-col justify-center items-center mb-20 mx-6 mt-20">
-        <div className="lg:w-1/3 text-center mb-20">
+        <div className="lg:w-1/2 text-center mb-20">
           <h3>Heartwarming family photos of adopted pets</h3>
           <p>
             {" "}
