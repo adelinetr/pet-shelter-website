@@ -13,12 +13,12 @@ export default function PlanSection() {
           <img src={Img1} className="rounded-lg" alt="" />
           <img src={Img2} className="rounded-lg" alt="" />
         </div>
-        <div className="mt-16 md:w-1/2">
+        <div className="mt-16 md:mt-3 md:w-1/2">
           <span className="basic-button bg-[#FFF6F1] text-mainOrange cursor-default">
             adoption fee: 35€
           </span>
           <h3 className="mt-10">Planning to adopt a pet?</h3>
-          <p>
+          <p className="text-base">
             Visit our shelter during adoption hours to meet our adorable pets
             and spend time interacting with different animals to find the
             perfect match for your lifestyle.

@@ -1,7 +1,14 @@
 import DonationPoints from "./DonationPoints";
 import DonationImg from "../images/donation-img1.png";
+import { Link, useNavigate } from "react-router-dom";
+import { link } from "fs";
 
 export default function DonationSection() {
+  const navigate = useNavigate();
+  const handleClick = (link: string) => {
+    navigate(link);
+    window.scrollTo(0,0)
+  }
   return (
     <section className="flex-col flex items-center mx-auto md:mt-32 h-fit mb-20 xl:mb-40 xl:max-w-7xl">
       <div className="justify-center items-center flex flex-col md:flex-row">
@@ -26,9 +33,11 @@ export default function DonationSection() {
             </div>
 
             <div className="group relative mt-14 mb-10">
+              <Link to='/services/donation' onClick={() => handleClick('/services/donation')}>
               <button className="rounded-lg absolute group-hover:bg-[#FFE4D6] duration-300 font-medium text-mainOrange uppercase px-14 py-2 bg-[#FFF3ED]">
                 Donate
               </button>
+              </Link>
             </div>
           </div>
 
