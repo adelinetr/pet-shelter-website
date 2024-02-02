@@ -11,7 +11,8 @@ export default function AboutUs() {
           <h3 className="relative mt-96 lg:mt-72 lg:text-6xl w-90 lg:w-max">
             About Our Pet Shelter
           </h3>
-          <p className="font-light w-80">
+          <p data-aos-duration="2000"
+            data-aos="fade-up" className="font-light w-80">
             Discover the faces and stories behind our compassionate team of
             caregivers, volunteers, and professionals who are the driving force
             behind our mission.

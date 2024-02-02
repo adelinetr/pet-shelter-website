@@ -1,6 +1,17 @@
+import { Link, useNavigate } from "react-router-dom";
+
 export default function Button(props: { name: string }) {
+  
+  const navigate = useNavigate();
+
+  const handleClick = (link:string) => {
+    navigate(link);
+    window.scrollTo(0, 0)
+  }
+  
   return (
     <div>
+      <Link to='services/adoption' onClick={() => handleClick("/services/adoption/")}>
       <button
         className="group flex justify-center items-center gap-4 font-heading font-medium 
             text-lg border border-white hover:bg-white hover:text-black duration-300 h-16 rounded-md w-full md:w-auto md:h-fit md:py-4 
@@ -21,6 +32,7 @@ export default function Button(props: { name: string }) {
           />
         </svg>
       </button>
+      </Link>
     </div>
   );
 }

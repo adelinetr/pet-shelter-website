@@ -1,6 +1,6 @@
 import { useState } from "react";
 import DogsAPIImage from "./DogsAPIImage";
-import Selector from "../CatsPage/Search/Selector";
+import Selector from "../Search/Selector";
 
 export default function DogsApiList() {
   const dogsNamesList = ["Mars", "Rio", "Annie", "Lora"];

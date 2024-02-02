@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home Page/Home";
-import OurPets from "./OurPets/OurPets";
 import DogsPage from "./OurPets/DogsPage/DogsPage";
 import CatsPage from "./OurPets/CatsPage/CatsPage";
 import AdoptionApplication from "./AdoptionApplication/AdoptionApplication";
@@ -18,7 +17,6 @@ export default function App() {
         {/*About us*/}
         <Route path="/about-us" element={<AboutPage />} />
         {/*Our Pets*/}
-        <Route path="/our-pets" element={<OurPets />} />
         <Route path="/our-pets/cats" element={<CatsPage />} />
         <Route path="/our-pets/dogs" element={<DogsPage />} />
         {/*Services*/}

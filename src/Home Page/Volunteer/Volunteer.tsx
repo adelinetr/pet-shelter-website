@@ -16,7 +16,11 @@ export default function Volunteer() {
           <h3 className="text-4xl mt-6 lg:text-5xl">
             Try volunteering & spend more time with our animals!
           </h3>
-          <p className="mt-6 leading-7">
+          <p
+            data-aos-duration="2000"
+            data-aos="fade-up"
+            className="mt-6 leading-7"
+          >
             Our goal is finding home for all sheltered animals, thus they stay
             in the shelter until they find new owners or die of old age. The
             organization is based on people who volunteer at the shelter.

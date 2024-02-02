@@ -1,4 +1,4 @@
-import Selector from "../Search/Selector";
+import Selector from "../../Search/Selector";
 import CatsAPIImage from "./CatsAPIImage";
 import { useEffect, useState } from "react";
 

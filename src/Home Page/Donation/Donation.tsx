@@ -14,7 +14,7 @@ export default function DonationSection() {
               <h3 className="leading-tight lg:text-5xl">
                 Help Our fluffy Friends Today
               </h3>
-              <h5 className="mb-8">How Your Donation Helps:</h5>
+              <h5 data-aos-duration="1000" data-aos="fade-up" className="mb-8">How Your Donation Helps:</h5>
             </div>
 
             <div className="flex flex-col">

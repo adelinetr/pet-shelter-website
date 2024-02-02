@@ -6,6 +6,8 @@ import VolunteerIcon from "../images/volunteer.svg";
 export default function HowToHelp() {
   return (
     <section
+      data-aos="fade-up"
+      data-aos-duration="3000"
       className="flex flex-col text-center mx-auto items-center h-full max-w-full mt-14 pb-28
         md:h-fit xl:max-w-7xl"
     >
@@ -28,6 +30,7 @@ export default function HowToHelp() {
           border="border border-[#DBDBDB]"
           titleColor="text-[#D4753A] group-hover:text-white"
           groupClass="group-hover:bg-[#DF8D5A] group-hover:text-white group-hover:rounded-lg duration-500 group-hover:cursor-pointer"
+          link="/services/adoption"
         />
 
         <ServicesComponent
@@ -37,6 +40,7 @@ export default function HowToHelp() {
           border="border border-[#DBDBDB]"
           titleColor="text-[#18994B] group-hover:text-white"
           groupClass="group-hover:bg-[#3BBE6F] group-hover:text-white group-hover:rounded-lg duration-500 group-hover:cursor-pointer "
+          link="/services/donation"
         />
 
         <ServicesComponent
@@ -46,6 +50,7 @@ export default function HowToHelp() {
           border="border border-[#DBDBDB]"
           titleColor="text-[#2060BE] group-hover:text-white"
           groupClass="group-hover:bg-[#417ACF] group-hover:text-white group-hover:rounded-lg duration-500 group-hover:cursor-pointer"
+          link="/services/volunteer"
         />
       </div>
     </section>

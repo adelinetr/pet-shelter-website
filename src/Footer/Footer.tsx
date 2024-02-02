@@ -3,10 +3,10 @@ import FooterComponent from "./FooterComponent";
 export default function Footer() {
   return (
     <div className="bg-[#1A1A1A]">
-      <div className="flex flex-col items-center mx-auto justify-center bg-[#1A1A1A] h-fit py-32 space-y-10 lg:grid lg:items-start lg:grid-cols-3 lg:space-y-0 lg:space-x-20 lg:max-w-7xl">
-        <div className="flex flex-col lg:mx-7 items-center justify-center lg:items-start">
-          <h2 className="font-heading text-mainOrange text-3xl">PetShelter</h2>
-          <p className="text-lighterGray text-sm w-90 text-center mt-4 lg:w-80 lg:text-left">
+      <div className="flex flex-col items-center mx-auto justify-center bg-[#1A1A1A] h-fit py-20 space-y-10 lg:grid lg:items-start lg:grid-cols-3 lg:space-y-0 lg:space-x-20 lg:max-w-7xl">
+        <div className="flex flex-col lg:mx-20 items-center justify-center lg:items-start">
+          <h2 className="font-heading text-mainOrange text-2xl">PetShelter</h2>
+          <p className="text-lighterGray text-xs w-90 text-center mt-1 lg:w-80 lg:text-left">
             We strongly believe in providing a better life for stray animals
             thanks to our organization.
           </p>
@@ -18,6 +18,9 @@ export default function Footer() {
             page1="Our Cats"
             page2="Our Dogs"
             page3=""
+            link1="/our-pets/cats"
+            link2="/our-pets/dogs"
+            link3=""
           />
 
           <FooterComponent
@@ -25,13 +28,19 @@ export default function Footer() {
             page1="Adoption"
             page2="Donation"
             page3="Volunteering"
+            link1="/services/adoption"
+            link2="/services/donation"
+            link3="/services/volunteer"
           />
 
           <FooterComponent
-            heading="How to..."
-            page1="How to Help"
+            heading="How to"
+            page1="How to Adopt"
             page2="How Donation Helps"
             page3="How To Volunteer"
+            link1="/services/adoption"
+            link2="/services/donation"
+            link3="/services/volunteer"
           />
         </div>
 
@@ -39,8 +48,8 @@ export default function Footer() {
           <div className="group cursor-pointer relative">
             <svg
               className="absolute"
-              width="32"
-              height="32"
+              width="25"
+              height="25"
               viewBox="0 0 32 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -72,9 +81,10 @@ export default function Footer() {
 
           <div className="group cursor-pointer relative">
             <svg
+              id="facebook"
               className="absolute"
-              width="33"
-              height="32"
+              width="25"
+              height="25"
               viewBox="0 0 33 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -102,8 +112,8 @@ export default function Footer() {
           <div className="group cursor-pointer relative">
             <svg
               className="absolute"
-              width="32"
-              height="32"
+              width="23"
+              height="23"
               viewBox="0 0 32 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
