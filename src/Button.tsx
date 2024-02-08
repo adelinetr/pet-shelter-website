@@ -11,7 +11,7 @@ export default function Button(props: { name: string }) {
   
   return (
     <div>
-      <Link to='services/adoption' onClick={() => handleClick("/services/adoption/")}>
+      <Link to='/services/adoption' onClick={() => handleClick("/services/adoption/")}>
       <button
         className="group flex justify-center items-center gap-4 font-heading font-medium 
             text-lg border border-white hover:bg-white hover:text-black duration-300 h-16 rounded-md w-full md:w-auto md:h-fit md:py-4 

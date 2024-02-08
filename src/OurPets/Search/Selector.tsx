@@ -27,7 +27,7 @@ export default function Selector(props: {
   };
 
   return (
-    <div className="flex space-x-6 mx-6">
+    <div className="flex space-x-6 mx-6 md:hidden">
       <Box>
         <FormControl className="w-90 md:w-90">
           <InputLabel id="demo-simple-select-label">{props.name}</InputLabel>
@@ -46,7 +46,6 @@ export default function Selector(props: {
             <MenuItem value={props.option3}>{props.option3}</MenuItem>
             <MenuItem value={props.option4}>{props.option4}</MenuItem>
             <MenuItem value={props.option5}>{props.option5}</MenuItem>
-            <MenuItem value={props.option6}>{props.option6}</MenuItem>
           </Select>
         </FormControl>
       </Box>

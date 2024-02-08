@@ -1,3 +1,4 @@
+import Search from "../../Search";
 import Selector from "../../Search/Selector";
 import CatsAPIImage from "./CatsAPIImage";
 import { useEffect, useState } from "react";
@@ -15,41 +16,63 @@ export default function CatsApiList() {
 
   const [cats, setCats] = useState<Cat[]>([]);
   const [selectedCity, setSelectedCity] = useState<string>("");
+  const [searchWord, setSearchWord] = useState<string>("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [currentPage, setPage] = useState<number>(0);
+
+  /*Load images on scroll */
+  const handleScroll = () => {
+    const section = document.getElementById("catSection")!;
+    if (
+      section.scrollHeight - window.innerHeight <= window.scrollY &&
+      !isLoading &&
+      section.scrollHeight - window.innerHeight + 1000 >= window.scrollY &&
+      !isLoading
+    ) {
+      setIsLoading(true);
+      loadNextPage();
+    }
+  };
 
   useEffect(() => {
-    const fetchCats = async () => {
-      try {
-        for (let i = 0; i < 10; i++) {
-          const response = await fetch(
-            `https://api.thecatapi.com/v1/images/search?limit=8&page=${i}`
-          );
-          const data = await response.json();
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isLoading]);
 
-          const cats: Cat[] = data
-            .filter((cat: Cat) => cat.url.toLowerCase().endsWith(".jpg"))
-            .map((cat: Cat) => ({
-              ...cat,
-              name: getRandomElement(catsNamesList) || "",
-              location: getRandomElement(locationsList) || "",
-            }));
+  /*Fetch images and add pages to the images*/
+  const loadNextPage = async () => {
+    try {
+      const response = await fetch(
+        `https://api.thecatapi.com/v1/images/search?limit=10&page=${currentPage}`
+      );
+      const data = await response.json();
 
-          setCats((prevCats) => [...prevCats, ...cats]);
-        }
-      } catch (error) {
-        console.error("Error fetching cats:", error);
-      }
-    };
+      const cats: Cat[] = data
+        .filter((cat: Cat) => cat.url.toLowerCase().endsWith(".jpg"))
+        .map((cat: Cat) => ({
+          ...cat,
+          name: getRandomElement(catsNamesList) || "",
+          location: getRandomElement(locationsList) || "",
+        }));
 
-    fetchCats();
-  }, []);
+      setCats((prevCats) => [...prevCats, ...cats]);
+      setPage(currentPage + 1);
+    } catch (error) {
+      console.error("Error fetching cats:", error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   const getRandomElement = (arr: any[]) =>
     arr.length ? arr[Math.floor(Math.random() * arr.length)] : undefined;
 
+  /*Selector's city change*/
   const handleCityChange = (selected: string) => {
     setSelectedCity(selected);
   };
 
+  /*Filtering cats by selecting cities in Selector*/
   const filteredCats = cats.filter((cat) => {
     if (selectedCity === "All cities" || selectedCity === "") {
       return true;
@@ -58,32 +81,53 @@ export default function CatsApiList() {
     }
   });
 
-  return (
-    <section className="flex flex-col justify-center items-center ">
-      <div className="flex flex-col space-y-6 md:space-y-0 md:flex-row h-max mt-20 mb-20 justify-center items-center">
-        <Selector
-          label="city"
-          option="All cities"
-          option2="Vilnius"
-          option3="Kaunas"
-          option4="Klaipėda"
-          option5="Palanga"
-          name="City"
-          value={selectedCity}
-          onSelect={handleCityChange}
-        />
-      </div>
+  /*Searching by a keyword in the Search Input*/
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchWord(event.target.value.toLowerCase());
+  };
 
-      <div className="max-w-7xl flex flex-col mx-auto">
-        <div className="md:mx-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
-          {filteredCats.map((cat, index) => (
-            <CatsAPIImage
-              key={index}
-              name={cat.name}
-              location={cat.location}
-              cat={cat}
-            />
-          ))}
+  /*Filter cats by a keyword in the Search Input*/
+  const searchedCats = filteredCats.filter(
+    (cat) =>
+      cat.location.toLowerCase().includes(searchWord) ||
+      cat.name.toLowerCase().includes(searchWord)
+  );
+
+  return (
+    <section
+      id="catSection"
+      className="flex flex-row justify-center items-start"
+    >
+      <div className="w-full">
+        <div className="flex flex-col space-y-6 md:space-y-0 md:flex-row h-max mt-20 md:mt-2 mb-20 justify-center items-center">
+          <Selector
+            label="city"
+            option="All cities"
+            option2="Vilnius"
+            option3="Kaunas"
+            option4="Klaipėda"
+            option5="Palanga"
+            name="City"
+            value={selectedCity}
+            onSelect={handleCityChange}
+          />
+        </div>
+
+        <div className="mx-6 md:mb-12 w-full hidden md:block">
+          <Search value={searchWord} onChange={handleSearchChange} />
+        </div>
+
+        <div className="max-w-7xl flex flex-col mx-auto">
+          <div className="md:mx-6 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-12">
+            {searchedCats.map((cat, index) => (
+              <CatsAPIImage
+                key={index}
+                name={cat.name}
+                location={cat.location}
+                cat={cat}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

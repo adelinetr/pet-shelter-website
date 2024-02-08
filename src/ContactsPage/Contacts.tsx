@@ -9,8 +9,8 @@ export default function Contacts() {
         <div>
             <Header />
             <HeroSection 
-            mobileHeroClass="contacts-hero bg-img"
-            heroClass="contacts-hero relative"
+            mobileHeroClass="contacts-hero lg:hidden bg-img"
+            heroClass="contacts-hero bg-img relative"
             heading="Our Contacts"
             text="For after-hours emergencies or to report a lost or found pet, please call our emergency line: (123) 789-0123."
             btnClass='hidden'

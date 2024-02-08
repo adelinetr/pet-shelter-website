@@ -11,7 +11,7 @@ export default function HeroSection(props: {
 }) {
   return (
     <section className="w-full">
-      <div className="mx-1 flex flex-col h-screen justify-center items-base">
+      <div className="flex flex-col h-screen justify-center items-base">
         <div className={props.mobileHeroClass}></div>
         <div className={props.heroClass}></div>
 
@@ -30,7 +30,6 @@ export default function HeroSection(props: {
             className={`${props.btnClass} flex flex-col mt-64 md:mt-14 space-y-7`}
           >
             <Button name="Adoption Application" />
-            <Button name="How to Take Care" />
           </div>
         </div>
       </div>

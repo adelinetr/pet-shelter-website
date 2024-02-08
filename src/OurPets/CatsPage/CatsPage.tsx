@@ -9,7 +9,9 @@ export default function CatsPage() {
         <section>
             <Header />
             <CatsHero />
-            <CatsApiList />
+            <div className="flex items-start justify-center">
+                <CatsApiList />
+            </div>
             <DonationSection />
             <Footer />
         </section>

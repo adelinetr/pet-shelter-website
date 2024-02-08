@@ -9,7 +9,7 @@ AOS.init();
 export default function Hero() {
   return (
     <section>
-      <div className="flex flex-col items-center justify-center mt-1">
+      <div className="flex flex-col items-center justify-center h-screen">
         <div className="hero-img bg-img absolute md:hidden"></div>
         <div className="hidden md:flex hero-desktop relative"></div>
 
