@@ -5,10 +5,10 @@ export default function CatsHero() {
     return(
         <section>
             <HeroSection
-            mobileHeroClass='cat-mobile bg-img md:hidden'
-            heroClass='cat-hero relative hidden bg-img md:block'
+            mobileHeroClass='cat-mobile relative bg-img md:hidden'
+            heroClass='cat-hero hidden relative bg-img md:block'
             heading='Our Cats'
-            text= "Explore our Cats Gallery and meet the charming cats currently calling our shelter home. Each profile offers a glimpse into their personalities, preferences, and the type of home they're seeking."
+            text= "Explore our Cats Gallery and meet the charming cats currently calling our shelter home."
             adoptionText='hidden'
             />
         </section>

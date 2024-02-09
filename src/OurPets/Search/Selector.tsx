@@ -29,7 +29,7 @@ export default function Selector(props: {
   return (
     <div className="flex space-x-6 mx-6 md:hidden">
       <Box>
-        <FormControl className="w-90 md:w-90">
+        <FormControl className="w-[80vw]">
           <InputLabel id="demo-simple-select-label">{props.name}</InputLabel>
           <Select
             labelId="demo-simple-select-label"

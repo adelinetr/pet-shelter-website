@@ -2,8 +2,8 @@ import "./About.css";
 
 export default function AboutUs() {
   return (
-    <section className="w-full">
-      <div className="flex flex-col h-screen  items-center justify-center">
+    <section className="w-full xl:max-w-[2025px] mx-auto">
+      <div className="flex flex-col h-screen w-full items-center justify-center">
         <div className="about-img-mobile absolute md:hidden rounded-lg"></div>
         <div className="about-hero hidden md:block rounded-lg"></div>
 
@@ -18,6 +18,7 @@ export default function AboutUs() {
             behind our mission.
           </p>
         </div>
+
       </div>
     </section>
   );

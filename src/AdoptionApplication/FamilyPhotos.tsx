@@ -4,10 +4,10 @@ import MobilePhotos from "./images/2images.png";
 export default function FamilyPhotos() {
   return (
     <section>
-      <div className="flex flex-col justify-center items-center mb-20 mx-6 mt-20">
-        <div className="lg:w-1/2 text-center mb-20">
+      <div className="flex flex-col justify-center items-center lg:mx-auto mb-20 mx-6 mt-20">
+        <div className="md:w-1/2 text-center mb-20">
           <h3>Heartwarming family photos of adopted pets</h3>
-          <p>
+          <p className="xl:w-2/4 mx-auto">
             {" "}
             Each pet, once lonely and longing for a home, now stands alongside
             their human companions, radiating joy and gratitude.

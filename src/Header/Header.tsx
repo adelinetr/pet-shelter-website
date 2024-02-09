@@ -17,11 +17,11 @@ export default function Header() {
   return (
     <header className="relative flex flex-col lg:justify-between lg:items-center">
       <div className="absolute flex lg:flex-col lg:justify-center lg:items-center">
-        <div className="w-full relative  lg:mx-16 md:w-fit">
+        <div className="w-full relative lg:mx-16 md:w-fit">
           <div className="absolute flex-col w- z-20 justify-center items-center lg:relative flex lg:mt-0">
             <div className="flex flex-row w-screen lg:w-fit lg:mx-6 justify-between items-center">
               <div className="relative mt-8 lg:mt-0 mx-8">
-                <h3 className="text-3xl relative font-medium font-logo md:mt-8 text-white lg:items-center">
+                <h3 className="text-3xl relative font-medium font-logo lg:mt-8 text-white lg:items-center">
                   PetShelter
                 </h3>
               </div>
@@ -29,7 +29,7 @@ export default function Header() {
               <div
                 onClick={toggleMenu}
                 id="menu"
-                className={`${isOpen ? "open" : ""} relative top-3 right-12`}
+                className={`${isOpen ? "open" : ""} relative top-3 right-10`}
               >
                 <button
                   type="button"

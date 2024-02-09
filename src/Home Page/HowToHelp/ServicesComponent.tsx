@@ -10,10 +10,10 @@ export default function ServicesComponent(props: {
   link: string;
 }) {
   const cardClass =
-    "group mt-16 rounded-lg duration-150 flex flex-row ease-in-out lg:mx-4";
-  const titleClass = "text-3xl font-semibold mb-2 md:text-xl";
+    "group rounded-lg duration-150 flex flex-row ease-in-out mx-4";
+  const titleClass = "text-xl font-semibold mb-2 md:text-xl";
   const divClass =
-    "w-90 h-90 flex flex-col justify-center items-center lg:w-fit lg:flex-row lg:h-40";
+    "lg:w-[28vw] h-[20vh] px-5 flex flex-row justify-center items-center lg:h-40";
   const navigate = useNavigate();
 
   const handleClick = (link: string) => {
@@ -22,7 +22,7 @@ export default function ServicesComponent(props: {
   };
 
   return (
-    <section>
+    <section className="max-w-lg w-full h-fit">
       <Link to={props.link} onClick={() => handleClick(props.link)}>
         <div className={`${props.border} ${cardClass}`}>
           <div className={`${divClass} ${props.groupClass}`}>
@@ -34,11 +34,11 @@ export default function ServicesComponent(props: {
               />
             </div>
 
-            <div className="text-left mx-6 flex lg:h-28 flex-col items-center lg:items-baseline lg:w-60 ">
+            <div className="text-left mx-6 flex lg:h-28 flex-col items-baseline lg:w-60">
               <h4 className={`${props.titleColor} ${titleClass}`}>
                 {props.title}
               </h4>
-              <p className=" w-80 text-lg text-center text-gray md:text-sm group-hover:text-white lg:w-fit lg:text-left">
+              <p className="w-fit text-gray text-sm group-hover:text-white text-left">
                 {props.description}
               </p>
             </div>

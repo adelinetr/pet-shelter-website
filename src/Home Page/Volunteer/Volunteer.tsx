@@ -6,7 +6,7 @@ export default function Volunteer() {
       <div className="mx-6 flex flex-col justify-center mb-10 md:flex-row xl:items-center mt-36 md:mt-10 lg:space-x-20">
         <div>
           <img
-            className="rounded-lg h-72 object-cover w-96 md:h-auto"
+            className="rounded-lg h-72 object-cover w-full md:w-90 md:h-auto"
             src={VolunteerImg1}
             alt=""
           />
@@ -29,8 +29,8 @@ export default function Volunteer() {
           <div className="relative items-center justify-center flex flex-col mt-20 mb-20 md:justify-start md:items-start">
             <div className="absolute group items-center justify-center ">
               <button
-                className="basic-button group-hover:bg-[#D5E3F9] duration-500 border bg-[#EAF2FF] text-[#447DD1] border-none text-2xl 
-                            md:px-14 md:text-base"
+                className="basic-button group-hover:bg-[#D5E3F9] duration-500 border bg-[#EAF2FF] text-[#447DD1] border-none text-base 
+                            md:px-14"
               >
                 Volunteer
               </button>

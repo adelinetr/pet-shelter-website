@@ -13,9 +13,9 @@ export default function About() {
   }, []);
 
   return (
-    <section className="flex flex-col lg:flex-col lg:justify-center lg:items-center lg:mb-32 xl:mb-2">
-      <div className="h-screen md:h-fit max-w-xl mx-10 md:mx-16 mb-10 mt-14 md:mb-16 lg:max-w-5xl xl:max-w-7xl xl:mb-2">
-        <div className="md:flex md:flex-col md:gap-2 md:max-w-6xl">
+    <section className="flex flex-col w-fit mb-8 h-fit mx-auto lg:flex-col lg:justify-center lg:items-center lg:mb-32 xl:mb-2">
+      <div className="h-fit md:h-fit w-[90vw] mx-6 md:mx-10 mb-10 mt-14 md:mb-16 lg:max-w-5xl xl:max-w-7xl xl:mb-2">
+        <div className="md:flex md:flex-col md:gap-3 md:max-w-6xl">
           <div className="text-left mt-14 md:mt-6">
             <h3>About us</h3>
             <h5>Our mission:</h5>
@@ -48,12 +48,12 @@ export default function About() {
             {Card.map((image, index) => {
               return (
                 <motion.div
-                  className="w-64 object-cover md:pointer-events-none md:w-72 xl:h-100 xl:w-96"
+                  className="w-64 mx-1 object-cover md:pointer-events-none md:w-72 xl:h-100 xl:w-96"
                   key={index}
                 >
                   <img
                     src={image}
-                    className="w-100 object-cover h-80 md:h-90 xl:h-max"
+                    className="w-fit object-cover h-80 md:h-90 xl:h-max"
                     alt=""
                   />
                 </motion.div>

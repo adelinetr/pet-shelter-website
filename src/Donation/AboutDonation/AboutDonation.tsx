@@ -2,7 +2,7 @@ import DonationImg from "../images/about-donation.png";
 
 export default function AboutDonation() {
   return (
-    <section className="flex md:mx-0 flex-col justify-center items-center mb-32 mt-20">
+    <section className="flex md:mx-0 flex-col justify-center items-center mb-32 mt-20 max-w-[2000px] xl:mx-auto">
       <div className="flex mx-6 flex-col justify-center items-center mb-20">
         <h3>About Donation</h3>
         <p className="mt-8 md:w-1/3 text-center text-gray font-text leading-relaxed">

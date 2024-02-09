@@ -7,13 +7,13 @@ export default function CatAPIImage(props: {
   cat: Cat;
 }) {
   return (
-    <div className="flex flex-col justify-start align-baseline">
-      <div className="space-x-15">
-        <div key={props.cat.id} className="my-7">
-          <div className="w-[170px] h-[220px] rounded-lg shadow-lg md:w-[220px] md:h-[280px] overflow-hidden">
+    <div className="flex flex-col justify-start sm:mx-auto align-baseline">
+      <div>
+        <div key={props.cat.id} className="my-6 mx-4">
+          <div className="w-[150px] h-[190px] object-cover rounded-lg shadow-lg overflow-hidden">
             <img
               src={props.cat.url}
-              className="w-[170px] h-[220px]  md:w-[220px] md:h-[280px] cursor-pointer object-cover hover:scale-110 hover:brightness-75 duration-300"
+              className="w-[150px] h-[190px] md:w-[190px] md:h-[240px] cursor-pointer object-cover hover:scale-110 hover:brightness-75 duration-300"
               alt={`Cat ${props.cat.id}`}
             />
           </div>

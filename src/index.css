@@ -7,7 +7,7 @@
 
 @layer base {
     h3{
-        @apply font-heading text-5xl mb-3;
+        @apply font-heading text-4xl mb-3;
     }
 
     h5{
@@ -23,7 +23,7 @@
     }
 
     .input {
-        @apply bg-lightGray border-b border-lighterGray w-90 focus:outline-none;
+        @apply bg-lightGray border-b border-lighterGray w-[60vw] lg:w-[40vw] focus:outline-none;
     }
 
     .nav-links {

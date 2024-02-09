@@ -8,12 +8,11 @@ export default function HowToHelp() {
     <section
       data-aos="fade-up"
       data-aos-duration="3000"
-      className="flex flex-col text-center mx-auto items-center h-full max-w-full mt-14 pb-28
-        md:h-fit xl:max-w-7xl"
+      className="flex flex-col text-center mx-auto items-center w-full h-fit mt-14 pb-28"
     >
-      <div className="text-container items-center justify-center flex flex-col text-center mt-12">
+      <div className="text-container items-center justify-center flex flex-col text-center mx-4 mt-12">
         <h3 className="text-4xl font-heading mb-10 md:mb-6">How to help?</h3>
-        <p className="leading-7 text-lg w-1/2 md:w-fit lg:mx-90 md:text-base">
+        <p className="leading-7 text-base w-fit lg:mx-32 md:text-base">
           Every homeless animal deserves a second opportunity, so we provide
           care, nursing, and make every effort to secure their ideal homes.
           <br />
@@ -22,7 +21,7 @@ export default function HowToHelp() {
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row lg:mx-16 xl:mx-6">
+      <div className="flex flex-col lg:flex-row lg:mx-16 xl:mx-6 mt-16 space-y-7 lg:space-y-0 items-center justify-center max-w-7xl">
         <ServicesComponent
           image={AdoptionIcon}
           title="Adoption"

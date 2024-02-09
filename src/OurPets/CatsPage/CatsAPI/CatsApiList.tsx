@@ -96,10 +96,9 @@ export default function CatsApiList() {
   return (
     <section
       id="catSection"
-      className="flex flex-row justify-center items-start"
+      className="max-w-7xl flex flex-col mx-auto w-fit"
     >
-      <div className="w-full">
-        <div className="flex flex-col space-y-6 md:space-y-0 md:flex-row h-max mt-20 md:mt-2 mb-20 justify-center items-center">
+        <div className="flex flex-col space-y-6 md:space-y-0 md:flex-row h-max mt-20 mb-20 justify-center items-center">
           <Selector
             label="city"
             option="All cities"
@@ -118,7 +117,7 @@ export default function CatsApiList() {
         </div>
 
         <div className="max-w-7xl flex flex-col mx-auto">
-          <div className="md:mx-6 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 lg:gap-8">
             {searchedCats.map((cat, index) => (
               <CatsAPIImage
                 key={index}
@@ -129,7 +128,6 @@ export default function CatsApiList() {
             ))}
           </div>
         </div>
-      </div>
     </section>
   );
 }

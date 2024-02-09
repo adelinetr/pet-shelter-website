@@ -1,7 +1,6 @@
 import DonationPoints from "./DonationPoints";
 import DonationImg from "../images/donation-img1.png";
 import { Link, useNavigate } from "react-router-dom";
-import { link } from "fs";
 
 export default function DonationSection() {
   const navigate = useNavigate();
@@ -10,13 +9,13 @@ export default function DonationSection() {
     window.scrollTo(0,0)
   }
   return (
-    <section className="flex-col flex items-center mx-auto md:mt-32 h-fit mb-20 xl:mb-40 xl:max-w-7xl">
+    <section className="flex-col flex items-center mx-auto md:mt-32 h-fit xl:mb-40 xl:max-w-7xl">
       <div className="justify-center items-center flex flex-col md:flex-row">
         <div
-          className="flex flex-col mx-10 md:space-x-20 xl:space-x-60 text-left h-screen md:flex-row 
+          className="flex flex-col mx-10 md:space-x-20 xl:space-x-60 text-left md:flex-row 
             md:h-fit md:mb-24 md:justify-center md:items-center xl:h-fit"
         >
-          <div className="flex flex-col ">
+          <div className="flex flex-col">
             <div>
               <h3 className="leading-tight lg:text-5xl">
                 Help Our fluffy Friends Today
@@ -43,7 +42,7 @@ export default function DonationSection() {
 
           <div className="mt-16 md:mt-0 md:mx-auto md:justify-center md:flex">
             <img
-              className="rounded-lg md:w-fit object-cover md:h-96"
+              className="rounded-lg object-cover md:h-80"
               src={DonationImg}
               alt="Img by 'https://www.freepik.com/free-psd/cute-dog-portrait-isolated_38312087.htm#query=dogs%20png&position=0&from_view=search&track=ais&uuid=875f1c10-eab4-42e8-981d-442e76c5df34' Freepik"
             />
